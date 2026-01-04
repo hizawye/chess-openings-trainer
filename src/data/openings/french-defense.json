@@ -75,6 +75,52 @@
         { "san": "Bxc3+", "uci": "b4c3" },
         { "san": "bxc3", "uci": "b2c3" }
       ]
+    },
+    {
+      "id": "classical-variation",
+      "name": "Classical Variation",
+      "eco": "C11",
+      "difficulty": "intermediate",
+      "description": "The traditional main line where Black develops with Nf6. THE classical French approach, solid and strategically rich. Named for its historical importance. This was the standard French defense for decades.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nf6", "uci": "g8f6", "annotation": "!", "comment": "The Classical! The main line" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Pinning the knight" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Breaking the pin" },
+        { "san": "e5", "uci": "e4e5", "comment": "Gaining space" },
+        { "san": "Nfd7", "uci": "f6d7", "comment": "Retreating" },
+        { "san": "Bxe7", "uci": "g5e7", "comment": "Trading bishops" },
+        { "san": "Qxe7", "uci": "d8e7" },
+        { "san": "f4", "uci": "f2f4", "annotation": "!", "comment": "Steinitz Variation - supporting e5" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "c5", "uci": "c7c5", "comment": "Counterplay" }
+      ]
+    },
+    {
+      "id": "mccutcheon",
+      "name": "McCutcheon Variation",
+      "eco": "C12",
+      "difficulty": "intermediate",
+      "description": "Black plays Bb4 after Bg5, a sharp tactical variation. Named after John McCutcheon. Leads to forcing play with chances for both sides.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bg5", "uci": "c1g5" },
+        { "san": "Bb4", "uci": "f8b4", "annotation": "!", "comment": "The McCutcheon! Sharp counter-pin" },
+        { "san": "e5", "uci": "e4e5", "comment": "Advancing" },
+        { "san": "h6", "uci": "h7h6", "annotation": "!", "comment": "Forcing a decision" },
+        { "san": "exf6", "uci": "e5f6", "comment": "Taking the knight" },
+        { "san": "hxg5", "uci": "h6g5", "comment": "Recapturing" },
+        { "san": "fxg7", "uci": "f6g7", "comment": "Taking a second pawn" },
+        { "san": "Rg8", "uci": "h8g8", "annotation": "!", "comment": "Typical McCutcheon - Black has compensation" },
+        { "san": "h4", "uci": "h2h4", "comment": "Attacking the g5 pawn" },
+        { "san": "gxh4", "uci": "g5h4" }
+      ]
     }
   ],
   "tags": ["1.e4", "solid", "strategic", "pawn chain", "classical"]

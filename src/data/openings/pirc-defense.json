@@ -1,0 +1,123 @@
+{
+  "id": "pirc-defense",
+  "name": "Pirc Defense",
+  "eco": "B07-B09",
+  "color": "black",
+  "description": "A flexible modern defense where Black fianchettoes the kingside bishop and allows White a strong center. Black counterattacks with c5 or e5 breaks. Named after Slovenian GM Vasja Pirc.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "d6", "uci": "d7d6" },
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "Nc3", "uci": "b1c3" },
+    { "san": "g6", "uci": "g7g6", "annotation": "!", "comment": "The Pirc! Flexible hypermodern setup" }
+  ],
+  "variations": [
+    {
+      "id": "austrian-attack",
+      "name": "Austrian Attack",
+      "eco": "B09",
+      "difficulty": "advanced",
+      "description": "White's most aggressive try with f4. Creates a massive pawn center and kingside attacking chances. Very sharp!",
+      "moves": [
+        { "san": "f4", "uci": "f2f4", "annotation": "!", "comment": "The Austrian Attack! Maximum aggression" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing toward the kingside" },
+        { "san": "Na6", "uci": "b8a6", "comment": "Flexible knight development" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "Counterattacking the center" },
+        { "san": "d5", "uci": "d4d5", "comment": "Closing the center" },
+        { "san": "e6", "uci": "e7e6", "comment": "Undermining the center" },
+        { "san": "dxe6", "uci": "d5e6", "comment": "Opening lines" },
+        { "san": "Bxe6", "uci": "c8e6" },
+        { "san": "f5", "uci": "f4f5", "annotation": "!", "comment": "Aggressive pawn storm" }
+      ]
+    },
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "B08",
+      "difficulty": "intermediate",
+      "description": "White plays Be2 and O-O, a solid positional approach. Less forcing than the Austrian Attack.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Be2", "uci": "f1e2", "comment": "The Classical - solid development" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Pinning the knight" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Developing" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Preparing Bh6" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "Central break" },
+        { "san": "dxe5", "uci": "d4e5" },
+        { "san": "dxe5", "uci": "d6e5" }
+      ]
+    },
+    {
+      "id": "150-attack",
+      "name": "150 Attack",
+      "eco": "B07",
+      "difficulty": "intermediate",
+      "description": "White plays Be3, Qd2, and f3, preparing a kingside storm. Systematic and dangerous.",
+      "moves": [
+        { "san": "Be3", "uci": "c1e3", "annotation": "!", "comment": "The 150 Attack - preparing f3 and Qd2" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Preparing O-O-O" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid setup" },
+        { "san": "f3", "uci": "f2f3", "comment": "Building a strong center" },
+        { "san": "b5", "uci": "b7b5", "annotation": "!", "comment": "Queenside counterplay" },
+        { "san": "Nge2", "uci": "g1e2", "comment": "Flexible knight" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Bh6", "uci": "e3h6", "comment": "Trading the Pirc bishop" },
+        { "san": "Bxh6", "uci": "g7h6" },
+        { "san": "Qxh6", "uci": "d2h6", "comment": "Attacking h7" }
+      ]
+    },
+    {
+      "id": "czech-defense",
+      "name": "Czech Defense",
+      "eco": "B07",
+      "difficulty": "intermediate",
+      "description": "Black plays c6 early, a solid system preparing b5 and a queenside counterattack.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "c6", "uci": "c7c6", "annotation": "!", "comment": "The Czech Defense - solid and flexible" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "h3", "uci": "h2h3", "comment": "Preventing Bg4" },
+        { "san": "b5", "uci": "b7b5", "comment": "Queenside expansion" },
+        { "san": "a3", "uci": "a2a3", "comment": "Preventing b4" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing" },
+        { "san": "Bb7", "uci": "c8b7" }
+      ]
+    },
+    {
+      "id": "byrne",
+      "name": "Byrne Variation",
+      "eco": "B09",
+      "difficulty": "advanced",
+      "description": "White plays Bg5, an aggressive system aiming to disrupt Black's kingside. Sharp and tactical.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Be3", "uci": "c1e3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Qd2", "uci": "d1d2" },
+        { "san": "c6", "uci": "c7c6" },
+        { "san": "Bh6", "uci": "e3h6", "annotation": "!", "comment": "The Byrne! Trading the bishop" },
+        { "san": "Bxh6", "uci": "g7h6" },
+        { "san": "Qxh6", "uci": "d2h6", "comment": "Pressure on h7" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "O-O-O", "uci": "e1c1", "annotation": "!", "comment": "Opposite-side castling" },
+        { "san": "Qa5", "uci": "d8a5", "comment": "Counterplay on the queenside" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "hypermodern", "flexible", "sharp", "counterattacking"]
+}

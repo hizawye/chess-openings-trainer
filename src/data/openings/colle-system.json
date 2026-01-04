@@ -1,0 +1,107 @@
+{
+  "id": "colle-system",
+  "name": "Colle System",
+  "eco": "D04-D05",
+  "color": "white",
+  "description": "A solid system opening where White plays d4, Nf3, e3, Bd3, and Nbd2. Very beginner-friendly with a clear plan: build up and attack on the kingside with e4. Named after Belgian master Edgard Colle. Reliable and easy to learn.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "e6", "uci": "e7e6" },
+    { "san": "e3", "uci": "e2e3", "annotation": "!", "comment": "The Colle System! Solid and flexible" }
+  ],
+  "variations": [
+    {
+      "id": "traditional-colle",
+      "name": "Traditional Colle",
+      "eco": "D05",
+      "difficulty": "beginner",
+      "description": "The main Colle setup with Bd3, Nbd2, O-O, and e4. Simple plan and easy to execute. Perfect for beginners.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5", "comment": "Solid center" },
+        { "san": "c4", "uci": "c2c4", "comment": "Mixing in Queen's Gambit ideas" },
+        { "san": "c6", "uci": "c7c6", "comment": "Supporting d5" },
+        { "san": "Nbd2", "uci": "b1d2", "annotation": "!", "comment": "Traditional Colle development" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing the bishop" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "e4", "uci": "e3e4", "annotation": "!", "comment": "The key Colle break!" },
+        { "san": "dxe4", "uci": "d5e4" },
+        { "san": "Nxe4", "uci": "d2e4", "comment": "Central knight" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "Bxe4", "uci": "d3e4", "comment": "Active bishop" }
+      ]
+    },
+    {
+      "id": "colle-zukertort",
+      "name": "Colle-Zukertort",
+      "eco": "D05",
+      "difficulty": "intermediate",
+      "description": "Colle system combined with b3 and Bb2. More flexible and positional than the traditional Colle.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "b3", "uci": "b2b3", "annotation": "!", "comment": "The Zukertort! Fianchetto on queenside" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "Bb2", "uci": "c1b2", "comment": "Completing the fianchetto" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Flexible knight" },
+        { "san": "Qe7", "uci": "d8e7" },
+        { "san": "Ne5", "uci": "f3e5", "annotation": "!", "comment": "Central outpost" },
+        { "san": "cxd4", "uci": "c5d4" }
+      ]
+    },
+    {
+      "id": "colle-koltanowski",
+      "name": "Colle-Koltanowski",
+      "eco": "D05",
+      "difficulty": "intermediate",
+      "description": "Colle with early c3 and Qb3. More aggressive, aiming for tactical opportunities.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "c3", "uci": "c2c3", "annotation": "!", "comment": "The Koltanowski! Preparing Qb3" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Qb3", "uci": "d1b3", "annotation": "!", "comment": "Attacking b7 and d5" },
+        { "san": "Qe7", "uci": "d8e7", "comment": "Defending" },
+        { "san": "e4", "uci": "e3e4", "comment": "Central break" },
+        { "san": "dxe4", "uci": "d5e4" }
+      ]
+    },
+    {
+      "id": "anti-colle",
+      "name": "Anti-Colle Setup",
+      "eco": "D05",
+      "difficulty": "intermediate",
+      "description": "Black plays Bf5 early, the Anti-Colle. Developing outside the pawn chain before White plays e4.",
+      "moves": [
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Bf5", "uci": "c8f5", "annotation": "!", "comment": "Anti-Colle! Developing early" },
+        { "san": "Bxf5", "uci": "d3f5", "comment": "Trading" },
+        { "san": "exf5", "uci": "e6f5", "comment": "Recapturing" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "dxc5", "uci": "d4c5", "comment": "Opening the center" },
+        { "san": "Bxc5", "uci": "d6c5" },
+        { "san": "Nb3", "uci": "d2b3", "comment": "Attacking the bishop" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "system", "beginner-friendly", "solid", "positional", "easy-to-learn"]
+}

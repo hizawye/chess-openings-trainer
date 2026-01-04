@@ -1,0 +1,124 @@
+{
+  "id": "benko-gambit",
+  "name": "Benko Gambit",
+  "eco": "A57-A59",
+  "color": "black",
+  "description": "Black sacrifices a pawn on b5 for long-term positional pressure on the queenside. Named after Pal Benko. Strategic and positional, with lasting compensation.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "c5", "uci": "c7c5" },
+    { "san": "d5", "uci": "d4d5" },
+    { "san": "b5", "uci": "b7b5", "annotation": "!!", "comment": "The Benko Gambit! Sacrificing for queenside pressure" }
+  ],
+  "variations": [
+    {
+      "id": "accepted",
+      "name": "Benko Gambit Accepted",
+      "eco": "A57",
+      "difficulty": "intermediate",
+      "description": "White accepts the pawn sacrifice. Black gets lasting pressure on the queenside files.",
+      "moves": [
+        { "san": "cxb5", "uci": "c4b5", "comment": "Accepting the gambit" },
+        { "san": "a6", "uci": "a7a6", "annotation": "!", "comment": "Opening the a-file" },
+        { "san": "bxa6", "uci": "b5a6", "comment": "Taking the pawn" },
+        { "san": "Bxa6", "uci": "c8a6", "comment": "Developing with tempo" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center" },
+        { "san": "e4", "uci": "e2e4", "comment": "Building a strong center" },
+        { "san": "Bxf1", "uci": "a6f1", "comment": "Trading the bishop" },
+        { "san": "Kxf1", "uci": "e1f1", "comment": "Forced recapture" },
+        { "san": "g6", "uci": "g7g6", "comment": "Fianchetto setup" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7", "comment": "Long-term pressure on the long diagonal" },
+        { "san": "g3", "uci": "g2g3" }
+      ]
+    },
+    {
+      "id": "fianchetto",
+      "name": "Fianchetto Variation",
+      "eco": "A58",
+      "difficulty": "advanced",
+      "description": "White plays g3 and Bg2, the most solid defense against the Benko. Strategic battle.",
+      "moves": [
+        { "san": "cxb5", "uci": "c4b5" },
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "bxa6", "uci": "b5a6" },
+        { "san": "g6", "uci": "g7g6", "comment": "Fianchetto" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bxa6", "uci": "c8a6" },
+        { "san": "g3", "uci": "g2g3", "annotation": "!", "comment": "The Fianchetto Defense - very solid" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Developing" },
+        { "san": "Rb1", "uci": "a1b1", "comment": "Defending b2" }
+      ]
+    },
+    {
+      "id": "zaitsev",
+      "name": "Zaitsev System",
+      "eco": "A57",
+      "difficulty": "advanced",
+      "description": "White plays f3, a solid system preventing Black's pieces from becoming too active. Modern and popular.",
+      "moves": [
+        { "san": "cxb5", "uci": "c4b5" },
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "bxa6", "uci": "b5a6" },
+        { "san": "Bxa6", "uci": "c8a6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "f3", "uci": "f2f3", "annotation": "!", "comment": "The Zaitsev System - restricting Black" },
+        { "san": "g6", "uci": "g7g6" },
+        { "san": "e4", "uci": "e2e4", "comment": "Strong center" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nge2", "uci": "g1e2", "comment": "Flexible knight" },
+        { "san": "Nbd7", "uci": "b8d7" }
+      ]
+    },
+    {
+      "id": "modern",
+      "name": "Modern Variation",
+      "eco": "A57",
+      "difficulty": "intermediate",
+      "description": "White plays e4 quickly, the most aggressive response. Sharp tactical play.",
+      "moves": [
+        { "san": "cxb5", "uci": "c4b5" },
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "bxa6", "uci": "b5a6" },
+        { "san": "Bxa6", "uci": "c8a6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "The Modern - aggressive" },
+        { "san": "Bxf1", "uci": "a6f1", "comment": "Trading immediately" },
+        { "san": "Kxf1", "uci": "e1f1" },
+        { "san": "g6", "uci": "g7g6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" }
+      ]
+    },
+    {
+      "id": "declined",
+      "name": "Benko Gambit Declined",
+      "eco": "A57",
+      "difficulty": "intermediate",
+      "description": "White declines the gambit with Nf3 or a3. More positional approach.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3", "comment": "Declining the gambit" },
+        { "san": "g6", "uci": "g7g6" },
+        { "san": "cxb5", "uci": "c4b5", "comment": "Taking now" },
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "b6", "uci": "b5b6", "comment": "Holding the extra pawn" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "e4", "uci": "e2e4" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nd2", "uci": "f3d2", "comment": "Protecting the b6 pawn" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "gambit", "positional", "queenside-pressure", "Benko"]
+}

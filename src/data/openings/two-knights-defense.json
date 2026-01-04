@@ -1,0 +1,143 @@
+{
+  "id": "two-knights-defense",
+  "name": "Two Knights Defense",
+  "eco": "C55-C59",
+  "color": "black",
+  "description": "Black develops the knight to f6 instead of the bishop, leading to sharp tactical complications. Features the famous Fried Liver Attack and Traxler Counterattack. Exciting and aggressive!",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "Nc6", "uci": "b8c6" },
+    { "san": "Bc4", "uci": "f1c4" },
+    { "san": "Nf6", "uci": "g8f6", "annotation": "!", "comment": "The Two Knights Defense! More aggressive than Bc5" }
+  ],
+  "variations": [
+    {
+      "id": "fried-liver",
+      "name": "Fried Liver Attack",
+      "eco": "C57",
+      "difficulty": "advanced",
+      "description": "The most famous tactical line where White sacrifices the knight on f7! Wild complications and attacking chances.",
+      "moves": [
+        { "san": "Ng5", "uci": "f3g5", "comment": "Attacking f7" },
+        { "san": "d5", "uci": "d7d5", "comment": "Counterattacking" },
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Nxd5", "uci": "f6d5", "comment": "The critical moment" },
+        { "san": "Nxf7", "uci": "g5f7", "annotation": "!!", "comment": "The Fried Liver sacrifice!" },
+        { "san": "Kxf7", "uci": "e8f7", "comment": "Forced to accept" },
+        { "san": "Qf3+", "uci": "d1f3", "comment": "Attacking the knight and king" },
+        { "san": "Ke6", "uci": "f7e6", "comment": "Only move" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing with tempo" },
+        { "san": "Nb4", "uci": "d5b4", "comment": "Attacking c2" },
+        { "san": "Qe4", "uci": "f3e4", "comment": "Centralizing the queen" },
+        { "san": "c6", "uci": "c7c6", "comment": "Defending" },
+        { "san": "a3", "uci": "a2a3", "comment": "Attacking the knight" },
+        { "san": "Na6", "uci": "b4a6" }
+      ]
+    },
+    {
+      "id": "traxler",
+      "name": "Traxler Counterattack",
+      "eco": "C57",
+      "difficulty": "advanced",
+      "description": "Black plays Bc5, sacrificing material for a fierce counterattack! Ultra-sharp and double-edged.",
+      "moves": [
+        { "san": "Ng5", "uci": "f3g5" },
+        { "san": "Bc5", "uci": "f8c5", "annotation": "!!", "comment": "The Traxler! A counter-sacrifice" },
+        { "san": "Nxf7", "uci": "g5f7", "comment": "Accepting the challenge" },
+        { "san": "Bxf2+", "uci": "c5f2", "annotation": "!", "comment": "Check! Counter-sacrifice" },
+        { "san": "Kxf2", "uci": "e1f2", "comment": "Forced" },
+        { "san": "Nxe4+", "uci": "f6e4", "comment": "Another check!" },
+        { "san": "Kg1", "uci": "f2g1", "comment": "King to safety" },
+        { "san": "Qh4", "uci": "d8h4", "annotation": "!", "comment": "Attacking h2 and e4" },
+        { "san": "g3", "uci": "g2g3", "comment": "Defending" },
+        { "san": "Nxg3", "uci": "e4g3", "comment": "Taking the pawn" },
+        { "san": "hxg3", "uci": "h2g3" },
+        { "san": "Qxg3+", "uci": "h4g3", "comment": "Perpetual check threats" }
+      ]
+    },
+    {
+      "id": "modern-bishops",
+      "name": "Modern Bishop's Opening",
+      "eco": "C55",
+      "difficulty": "intermediate",
+      "description": "White plays d3 instead of Ng5, leading to a more positional game. Safer for both sides.",
+      "moves": [
+        { "san": "d3", "uci": "d2d3", "annotation": "!", "comment": "The Modern approach - avoiding tactics" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Solid development" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "c3", "uci": "c2c3", "comment": "Preparing d4" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Bb3", "uci": "c4b3", "comment": "Retreating the bishop" },
+        { "san": "h6", "uci": "h7h6", "comment": "Preventing Bg5" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Centralizing the rook" },
+        { "san": "Na5", "uci": "c6a5", "comment": "Attacking the bishop" },
+        { "san": "Bc2", "uci": "b3c2" }
+      ]
+    },
+    {
+      "id": "max-lange",
+      "name": "Max Lange Attack",
+      "eco": "C55",
+      "difficulty": "advanced",
+      "description": "White plays d4 immediately, leading to sharp open positions. Very tactical!",
+      "moves": [
+        { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "The Max Lange! Immediate center break" },
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling before recapturing" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Developing" },
+        { "san": "e5", "uci": "e4e5", "annotation": "!", "comment": "Gambit pawn" },
+        { "san": "d5", "uci": "d7d5", "comment": "Counter in center" },
+        { "san": "exf6", "uci": "e5f6", "comment": "Taking the knight" },
+        { "san": "dxc4", "uci": "d5c4", "comment": "Taking the bishop" },
+        { "san": "Re1+", "uci": "f1e1", "comment": "Check!" },
+        { "san": "Be6", "uci": "c8e6", "comment": "Blocking" },
+        { "san": "Ng5", "uci": "f3g5", "comment": "Attacking e6" }
+      ]
+    },
+    {
+      "id": "polerio",
+      "name": "Polerio Defense",
+      "eco": "C58",
+      "difficulty": "advanced",
+      "description": "Black plays Na5, the classical defense against White's Ng5. Solid and well-analyzed.",
+      "moves": [
+        { "san": "Ng5", "uci": "f3g5" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Na5", "uci": "c6a5", "annotation": "!", "comment": "The Polerio Defense - classical" },
+        { "san": "Bb5+", "uci": "c4b5", "comment": "Check!" },
+        { "san": "c6", "uci": "c7c6", "comment": "Blocking" },
+        { "san": "dxc6", "uci": "d5c6", "comment": "Opening lines" },
+        { "san": "bxc6", "uci": "b7c6" },
+        { "san": "Be2", "uci": "b5e2", "comment": "Retreating" },
+        { "san": "h6", "uci": "h7h6", "comment": "Kicking the knight" },
+        { "san": "Nf3", "uci": "g5f3" },
+        { "san": "e4", "uci": "e5e4", "comment": "Gaining space" }
+      ]
+    },
+    {
+      "id": "fritz",
+      "name": "Fritz Variation",
+      "eco": "C57",
+      "difficulty": "advanced",
+      "description": "Black plays Nd4, a modern computer-inspired defense. Sharp and tactical.",
+      "moves": [
+        { "san": "Ng5", "uci": "f3g5" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Nd4", "uci": "c6d4", "annotation": "!", "comment": "The Fritz! Modern computer defense" },
+        { "san": "c3", "uci": "c2c3", "comment": "Attacking the knight" },
+        { "san": "b5", "uci": "b7b5", "comment": "Counter-attack" },
+        { "san": "Bf1", "uci": "c4f1", "comment": "Retreating" },
+        { "san": "Nxd5", "uci": "f6d5", "comment": "Taking the pawn" },
+        { "san": "cxd4", "uci": "c3d4", "comment": "Recapturing" },
+        { "san": "Qxg5", "uci": "d8g5", "comment": "Taking the knight" },
+        { "san": "Bxb5+", "uci": "f1b5", "comment": "Check!" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "tactical", "sharp", "Fried-Liver", "exciting"]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "petrovs-defense",
+  "name": "Petrov's Defense",
+  "eco": "C42-C43",
+  "color": "black",
+  "description": "Also known as the Russian Defense. Black immediately attacks White's e4 pawn with Nf6, leading to symmetrical positions. Solid and reliable, favored by players seeking equality.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "Nf6", "uci": "g8f6", "annotation": "!", "comment": "Petrov's Defense! Black counter-attacks e4" }
+  ],
+  "variations": [
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "C42",
+      "difficulty": "intermediate",
+      "description": "The main line where both sides develop naturally. Leads to balanced positions with equal chances.",
+      "moves": [
+        { "san": "Nxe5", "uci": "f3e5", "comment": "Taking the pawn" },
+        { "san": "d6", "uci": "d7d6", "comment": "Attacking the knight" },
+        { "san": "Nf3", "uci": "e5f3", "comment": "Retreating the knight" },
+        { "san": "Nxe4", "uci": "f6e4", "comment": "Now Black has taken on e4" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "d5", "uci": "d6d5", "comment": "Symmetrical pawn structure" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing and attacking the knight" },
+        { "san": "Bd6", "uci": "f8d6", "comment": "Mirroring White's development" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "c4", "uci": "c2c4", "annotation": "!", "comment": "Trying to break the symmetry" },
+        { "san": "c6", "uci": "c7c6", "comment": "Defending the d5 pawn" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nxc3", "uci": "e4c3", "comment": "Trading knights" }
+      ]
+    },
+    {
+      "id": "steinitz",
+      "name": "Steinitz Variation",
+      "eco": "C43",
+      "difficulty": "advanced",
+      "description": "White plays d4 immediately, leading to sharper play. Named after the first World Champion Wilhelm Steinitz.",
+      "moves": [
+        { "san": "Nxe5", "uci": "f3e5" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "e5f3" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d6d5" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Nc6", "uci": "b8c6", "annotation": "!", "comment": "The Steinitz! Developing the knight instead of the bishop" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "c4", "uci": "c2c4", "comment": "Attacking the center" },
+        { "san": "Nb4", "uci": "c6b4", "comment": "Attacking the bishop" },
+        { "san": "Be2", "uci": "d3e2" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "three-knights",
+      "name": "Three Knights Variation",
+      "eco": "C42",
+      "difficulty": "beginner",
+      "description": "White develops Nc3 early, leading to a solid positional game. Good for beginners learning the opening.",
+      "moves": [
+        { "san": "Nxe5", "uci": "f3e5" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "e5f3" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "Nc3", "uci": "b1c3", "annotation": "!", "comment": "The Three Knights Game" },
+        { "san": "Nxc3", "uci": "e4c3", "comment": "Trading the centralized knight" },
+        { "san": "dxc3", "uci": "d2c3", "comment": "Recapturing with the pawn" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing the bishop" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Preparing to castle queenside" },
+        { "san": "Nd7", "uci": "b8d7", "comment": "Developing" }
+      ]
+    },
+    {
+      "id": "modern-attack",
+      "name": "Modern Attack",
+      "eco": "C43",
+      "difficulty": "intermediate",
+      "description": "White plays Qe2 to support the e4 pawn and maintain more pieces. Sharp tactical possibilities.",
+      "moves": [
+        { "san": "Nxe5", "uci": "f3e5" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "e5f3" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d6d5" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Re1", "uci": "f1e1", "annotation": "!", "comment": "The Modern Attack! Pinning the knight" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing and unpinning" },
+        { "san": "c4", "uci": "c2c4", "comment": "Attacking the center" }
+      ]
+    },
+    {
+      "id": "cochrane-gambit",
+      "name": "Cochrane Gambit",
+      "eco": "C42",
+      "difficulty": "advanced",
+      "description": "An aggressive gambit where White sacrifices the knight on f7. Sharp tactical complications follow. Risky but fun!",
+      "moves": [
+        { "san": "Nxe5", "uci": "f3e5" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nxf7", "uci": "e5f7", "annotation": "!?", "comment": "The Cochrane Gambit! A wild sacrifice" },
+        { "san": "Kxf7", "uci": "e8f7", "comment": "Accepting the gambit" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "Nxe4", "uci": "f6e4", "comment": "Taking the pawn" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing with tempo" },
+        { "san": "Nf6", "uci": "e4f6", "comment": "Retreating the knight" },
+        { "san": "O-O", "uci": "e1g1", "comment": "Castling into the attack" },
+        { "san": "Kg8", "uci": "f7g8", "comment": "Getting the king to safety" },
+        { "san": "c4", "uci": "c2c4", "annotation": "!", "comment": "Building a strong center for compensation" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "solid", "symmetrical", "classical", "drawish"]
+}

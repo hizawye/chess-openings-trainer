@@ -73,6 +73,142 @@
         { "san": "Nxd4", "uci": "f3d4" },
         { "san": "g6", "uci": "g7g6", "comment": "The Accelerated Dragon - no d6 yet!" }
       ]
+    },
+    {
+      "id": "sveshnikov",
+      "name": "Sveshnikov Variation",
+      "eco": "B33",
+      "difficulty": "advanced",
+      "description": "One of the most popular modern Sicilians where Black plays e5, accepting structural weaknesses for active piece play. Named after Evgeny Sveshnikov. Favored by elite players including Leko and Radjabov.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The Sveshnikov! Sharp and modern" },
+        { "san": "Ndb5", "uci": "d4b5", "comment": "Attacking d6" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Pinning the knight" },
+        { "san": "a6", "uci": "a7a6", "comment": "Forcing the knight back" },
+        { "san": "Na3", "uci": "b5a3", "comment": "Retreating to an awkward square" },
+        { "san": "b5", "uci": "b7b5", "annotation": "!", "comment": "Gaining space - the Sveshnikov structure" }
+      ]
+    },
+    {
+      "id": "scheveningen",
+      "name": "Scheveningen Variation",
+      "eco": "B80",
+      "difficulty": "intermediate",
+      "description": "A flexible setup where Black plays both e6 and d6, creating a solid small center. Named after a Dutch seaside town. Popular at all levels for its reliability and flexibility.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e6", "uci": "e7e6", "annotation": "!", "comment": "The Scheveningen! Small but solid center" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Solid development" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "f4", "uci": "f2f4", "comment": "Preparing kingside expansion" },
+        { "san": "Nc6", "uci": "b8c6" }
+      ]
+    },
+    {
+      "id": "taimanov",
+      "name": "Taimanov Variation",
+      "eco": "B44",
+      "difficulty": "intermediate",
+      "description": "Black plays e6 and Nc6, a flexible Sicilian system. Named after Mark Taimanov. Popular among strong players for its strategic complexity and flexibility.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "e6", "uci": "e7e6", "annotation": "!", "comment": "The Taimanov! Flexible and solid" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "Qc7", "uci": "d8c7", "comment": "Typical Taimanov queen placement" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Solid development" },
+        { "san": "a6", "uci": "a7a6", "comment": "Preparing b5" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Preparing castling queenside" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "f3", "uci": "f2f3", "comment": "Preparing e4" }
+      ]
+    },
+    {
+      "id": "kan",
+      "name": "Kan Variation",
+      "eco": "B41",
+      "difficulty": "intermediate",
+      "description": "Black plays e6 and a6, the Kan system. Named after Ilya Kan. Flexible and sound, keeping multiple options open.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "a6", "uci": "a7a6", "annotation": "!", "comment": "The Kan! Flexible setup" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "Qc7", "uci": "d8c7", "comment": "Typical Kan queen" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing the bishop" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nxc6", "uci": "d4c6", "comment": "Trading knights" },
+        { "san": "bxc6", "uci": "b7c6" }
+      ]
+    },
+    {
+      "id": "classical",
+      "name": "Classical Sicilian",
+      "eco": "B56",
+      "difficulty": "intermediate",
+      "description": "Black plays Nc6 and develops naturally. The old main line of the Sicilian before the Najdorf and Dragon became popular. Solid and strategically rich.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nc6", "uci": "b8c6", "annotation": "!", "comment": "The Classical! Developing naturally" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Richter-Rauzer Attack" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid center" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Preparing queenside castling" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "O-O-O", "uci": "e1c1", "annotation": "!", "comment": "Sharp! Opposite side castling" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "closed",
+      "name": "Closed Sicilian",
+      "eco": "B23",
+      "difficulty": "beginner",
+      "description": "White plays Nc3 instead of Nf3, avoiding the Open Sicilian. Leads to slower, more positional battles. Popular anti-Sicilian choice.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3", "annotation": "!", "comment": "The Closed Sicilian! Avoiding open lines" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "g3", "uci": "g2g3", "comment": "Fianchetto setup" },
+        { "san": "g6", "uci": "g7g6", "comment": "Mirroring White's setup" },
+        { "san": "Bg2", "uci": "f1g2", "comment": "Fianchetto bishop" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid center" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nge2", "uci": "g1e2", "comment": "Flexible knight development" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "f4", "uci": "f2f4", "comment": "Preparing kingside expansion" }
+      ]
     }
   ],
   "tags": ["1.e4", "asymmetrical", "tactical", "popular", "complex"]

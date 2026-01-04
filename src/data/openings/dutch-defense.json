@@ -1,0 +1,118 @@
+{
+  "id": "dutch-defense",
+  "name": "Dutch Defense",
+  "eco": "A80-A99",
+  "color": "black",
+  "description": "An aggressive defense where Black plays f5, fighting for control of e4 from the start. Leads to unbalanced positions with kingside attacking chances for Black. Risky but rewarding!",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "f5", "uci": "f7f5", "annotation": "!", "comment": "The Dutch Defense! Aggressive from the start" }
+  ],
+  "variations": [
+    {
+      "id": "leningrad",
+      "name": "Leningrad Variation",
+      "eco": "A89",
+      "difficulty": "intermediate",
+      "description": "Black fianchettoes the kingside bishop in the Dutch. Sharp attacking chances with the bishop on g7.",
+      "moves": [
+        { "san": "g3", "uci": "g2g3", "comment": "White also fianchettoes" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "g6", "uci": "g7g6", "annotation": "!", "comment": "The Leningrad! Fianchetto setup" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7", "comment": "The Dutch bishop - very powerful" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "c4", "uci": "c2c4", "comment": "Building the center" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid pawn structure" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Qe8", "uci": "d8e8", "annotation": "!", "comment": "Preparing Qh5 and kingside attack" },
+        { "san": "d5", "uci": "d4d5", "comment": "Closing the center" }
+      ]
+    },
+    {
+      "id": "stonewall",
+      "name": "Stonewall Variation",
+      "eco": "A90",
+      "difficulty": "beginner",
+      "description": "Black builds a solid pawn chain with pawns on d5, e6, and f5. Easy to learn with clear plans.",
+      "moves": [
+        { "san": "g3", "uci": "g2g3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "e6", "uci": "e7e6", "annotation": "!", "comment": "The Stonewall setup" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "d5", "uci": "d7d5", "comment": "Solid stonewall structure" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Bd6", "uci": "f8d6", "comment": "Developing" },
+        { "san": "c4", "uci": "c2c4" },
+        { "san": "c6", "uci": "c7c6", "comment": "Defending d5" },
+        { "san": "b3", "uci": "b2b3", "comment": "Preparing Bb2" },
+        { "san": "Qe7", "uci": "d8e7", "comment": "Preparing Qh4 and attack" }
+      ]
+    },
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "A84",
+      "difficulty": "intermediate",
+      "description": "Black plays e6 and Be7, the classical setup. Solid and flexible approach to the Dutch.",
+      "moves": [
+        { "san": "c4", "uci": "c2c4", "comment": "Building the center" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "g3", "uci": "g2g3" },
+        { "san": "e6", "uci": "e7e6", "comment": "The Classical Dutch" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Qe8", "uci": "d8e8", "comment": "Preparing Qg6" }
+      ]
+    },
+    {
+      "id": "staunton-gambit",
+      "name": "Staunton Gambit",
+      "eco": "A83",
+      "difficulty": "advanced",
+      "description": "White plays e4, sacrificing a pawn for rapid development. Sharp and tactical try against the Dutch.",
+      "moves": [
+        { "san": "e4", "uci": "e2e4", "annotation": "!!", "comment": "The Staunton Gambit! Sacrificing for attack" },
+        { "san": "fxe4", "uci": "f5e4", "comment": "Accepting the gambit" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing with tempo" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Pinning the knight" },
+        { "san": "g6", "uci": "g7g6", "comment": "Defending" },
+        { "san": "f3", "uci": "f2f3", "annotation": "!", "comment": "Opening lines" },
+        { "san": "exf3", "uci": "e4f3" },
+        { "san": "Nxf3", "uci": "g1f3", "comment": "Strong center and development" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Developing with attack" }
+      ]
+    },
+    {
+      "id": "hopton-attack",
+      "name": "Hopton Attack",
+      "eco": "A80",
+      "difficulty": "intermediate",
+      "description": "White plays Bg5, an aggressive system against the Dutch. Direct and tactical.",
+      "moves": [
+        { "san": "Bg5", "uci": "c1g5", "annotation": "!", "comment": "The Hopton Attack - aggressive" },
+        { "san": "h6", "uci": "h7h6", "comment": "Asking the bishop" },
+        { "san": "Bh4", "uci": "g5h4" },
+        { "san": "g5", "uci": "g7g5", "comment": "Kicking the bishop" },
+        { "san": "Bg3", "uci": "h4g3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid center" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Bd3", "uci": "f1d3" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "aggressive", "kingside-attack", "sharp", "unbalanced"]
+}

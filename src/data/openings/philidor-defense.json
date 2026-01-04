@@ -1,0 +1,128 @@
+{
+  "id": "philidor-defense",
+  "name": "Philidor Defense",
+  "eco": "C41",
+  "color": "black",
+  "description": "One of the oldest chess openings, named after François-André Danican Philidor. Black plays d6, creating a solid but somewhat passive position. Reliable and hard to break down, though White typically gets a comfortable advantage. Good for players who want a solid defensive structure.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "d6", "uci": "d7d6", "annotation": "!", "comment": "The Philidor! Solid and classical" }
+  ],
+  "variations": [
+    {
+      "id": "hanham",
+      "name": "Hanham Variation",
+      "eco": "C41",
+      "difficulty": "beginner",
+      "description": "The main line of the Philidor where Black plays Nbd7 and Be7. Solid and safe, though a bit passive. Named after American master James Moore Hanham.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4", "comment": "Classical center" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing the knight" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "Nbd7", "uci": "b8d7", "annotation": "!", "comment": "The Hanham - flexible knight" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Italian-style development" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting e4" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid pawn structure" },
+        { "san": "a4", "uci": "a2a4", "comment": "Preventing b5" },
+        { "san": "Qc7", "uci": "d8c7", "comment": "Connecting rooks" }
+      ]
+    },
+    {
+      "id": "lion",
+      "name": "Lion Variation",
+      "eco": "C41",
+      "difficulty": "intermediate",
+      "description": "Black plays Nbd7 and g6, combining Philidor and fianchetto ideas. More flexible and dynamic than the Hanham.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Bc4", "uci": "f1c4" },
+        { "san": "g6", "uci": "g7g6", "annotation": "!", "comment": "The Lion! Fianchetto setup" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "Bg7", "uci": "f8g7", "comment": "Completing fianchetto" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting the center" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "h3", "uci": "h2h3", "comment": "Preventing Bg4" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid structure" },
+        { "san": "a4", "uci": "a2a4" },
+        { "san": "Qc7", "uci": "d8c7" }
+      ]
+    },
+    {
+      "id": "counter-gambit",
+      "name": "Philidor Counter-Gambit",
+      "eco": "C41",
+      "difficulty": "intermediate",
+      "description": "Black plays f5, a sharp gambit approach. Risky but interesting, seeking immediate counterplay.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "f5", "uci": "f7f5", "annotation": "!", "comment": "The Counter-Gambit! Sharp and aggressive" },
+        { "san": "dxe5", "uci": "d4e5", "comment": "Accepting the challenge" },
+        { "san": "fxe4", "uci": "f5e4", "comment": "Recapturing" },
+        { "san": "Ng5", "uci": "f3g5", "annotation": "!", "comment": "Attacking e4" },
+        { "san": "d5", "uci": "d6d5", "comment": "Central pawn" },
+        { "san": "e6", "uci": "e5e6", "annotation": "!", "comment": "Opening lines" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Developing with tempo" },
+        { "san": "Nxe4", "uci": "g5e4", "comment": "Regaining material" },
+        { "san": "dxe4", "uci": "d5e4" },
+        { "san": "Qh5+", "uci": "d1h5", "comment": "Check! Winning the e4 pawn" },
+        { "san": "g6", "uci": "g7g6" },
+        { "san": "Qxe4", "uci": "h5e4" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Attacking the queen" }
+      ]
+    },
+    {
+      "id": "steinitz",
+      "name": "Steinitz Variation",
+      "eco": "C41",
+      "difficulty": "intermediate",
+      "description": "White plays Bc4 early, the Steinitz approach. Direct and classical, aiming for quick development and central control.",
+      "moves": [
+        { "san": "Bc4", "uci": "f1c4", "annotation": "!", "comment": "The Steinitz - immediate development" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "exd4", "uci": "e5d4", "comment": "Trading" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Central knight" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid structure" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting e4" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing outside the pawn chain" }
+      ]
+    },
+    {
+      "id": "larsen",
+      "name": "Larsen Variation",
+      "eco": "C41",
+      "difficulty": "advanced",
+      "description": "Black plays exd4 and d5, the Larsen approach. Dynamic and sharp, seeking active piece play rather than passive defense.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "exd4", "uci": "e5d4", "annotation": "!", "comment": "The Larsen! Trading immediately" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Recapturing" },
+        { "san": "d5", "uci": "d6d5", "annotation": "!", "comment": "Central strike" },
+        { "san": "exd5", "uci": "e4d5", "comment": "Trading" },
+        { "san": "Qxd5", "uci": "d8d5", "comment": "Centralized queen" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Attacking the queen" },
+        { "san": "Qe5+", "uci": "d5e5", "comment": "Check! Maintaining central position" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Blocking" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Bf3", "uci": "e2f3", "comment": "Attacking the queen" },
+        { "san": "Qc5", "uci": "e5c5" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "solid", "classical", "positional", "defensive"]
+}

@@ -72,6 +72,91 @@
         { "san": "Nbd7", "uci": "b8d7" },
         { "san": "Bd3", "uci": "f1d3" }
       ]
+    },
+    {
+      "id": "semi-tarrasch",
+      "name": "Semi-Tarrasch Defense",
+      "eco": "D40",
+      "difficulty": "intermediate",
+      "description": "Black plays c5, a dynamic approach combining QGD and Tarrasch ideas. Flexible and active, seeking counterplay.",
+      "moves": [
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "The Semi-Tarrasch! Dynamic counterplay" },
+        { "san": "cxd5", "uci": "c4d5", "comment": "Trading" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "e4", "uci": "e2e4", "comment": "Building the center" },
+        { "san": "Nxc3", "uci": "d5c3" },
+        { "san": "bxc3", "uci": "b2c3", "comment": "Doubled pawns but strong center" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "cxd4", "uci": "c3d4", "annotation": "!", "comment": "Isolated queen's pawn" },
+        { "san": "Bb4+", "uci": "f8b4", "comment": "Check! Developing" }
+      ]
+    },
+    {
+      "id": "albin-counter-gambit",
+      "name": "Albin Counter-Gambit",
+      "eco": "D08",
+      "difficulty": "intermediate",
+      "description": "Black plays e5!, offering a counter-gambit. Sharp and aggressive, seeking rapid piece play. Named after Adolf Albin. Dangerous if White is unprepared.",
+      "moves": [
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The Albin! Counter-gambit" },
+        { "san": "dxe5", "uci": "d4e5", "comment": "Accepting" },
+        { "san": "d4", "uci": "d5d4", "annotation": "!", "comment": "Central wedge" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing with attack" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Developing" },
+        { "san": "Bg4", "uci": "c8g4", "annotation": "!", "comment": "Pinning the knight" },
+        { "san": "h3", "uci": "h2h3", "comment": "Asking the bishop" },
+        { "san": "Bxf3", "uci": "g4f3", "comment": "Trading" },
+        { "san": "Nxf3", "uci": "d2f3" },
+        { "san": "Qe7", "uci": "d8e7", "annotation": "!", "comment": "Pressure on e5" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Defending e5" }
+      ]
+    },
+    {
+      "id": "chigorin-defense",
+      "name": "Chigorin Defense",
+      "eco": "D07",
+      "difficulty": "intermediate",
+      "description": "Black plays Nc6, the unorthodox Chigorin. Named after Mikhail Chigorin. Dynamic and unique, avoiding symmetry.",
+      "moves": [
+        { "san": "Nc6", "uci": "b8c6", "annotation": "!", "comment": "The Chigorin! Unorthodox" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Pinning the knight" },
+        { "san": "cxd5", "uci": "c4d5", "comment": "Trading" },
+        { "san": "Bxf3", "uci": "g4f3", "comment": "Trading the knight" },
+        { "san": "gxf3", "uci": "g2f3", "comment": "Recapturing - doubled pawns" },
+        { "san": "Qxd5", "uci": "d8d5", "comment": "Centralized queen" },
+        { "san": "e3", "uci": "e2e3", "comment": "Developing" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "Central expansion" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Attacking the queen" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Pinning" },
+        { "san": "Bd2", "uci": "c1d2" }
+      ]
+    },
+    {
+      "id": "baltic-defense",
+      "name": "Baltic Defense",
+      "eco": "D02",
+      "difficulty": "intermediate",
+      "description": "Black plays Bf5, developing the bishop early. Rare but sound, avoiding mainstream theory. Simple and solid.",
+      "moves": [
+        { "san": "Bf5", "uci": "c8f5", "annotation": "!", "comment": "The Baltic! Early bishop development" },
+        { "san": "cxd5", "uci": "c4d5", "comment": "Trading" },
+        { "san": "Bxb1", "uci": "f5b1", "annotation": "!", "comment": "Bold! Trading for the knight" },
+        { "san": "Rxb1", "uci": "a1b1", "comment": "Recapturing" },
+        { "san": "Qxd5", "uci": "d8d5", "comment": "Centralized queen" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid structure" },
+        { "san": "e3", "uci": "e2e3", "comment": "Developing" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "Bb4+", "uci": "f8b4", "comment": "Check!" },
+        { "san": "Bd2", "uci": "c1d2" }
+      ]
     }
   ],
   "tags": ["1.d4", "classical", "strategic", "solid", "popular"]

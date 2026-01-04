@@ -1,0 +1,98 @@
+{
+  "id": "old-indian-defense",
+  "name": "Old Indian Defense",
+  "eco": "A53-A55",
+  "color": "black",
+  "description": "A flexible and solid setup where Black plays d6 and e5, creating a King's Indian-like structure without committing to g6. Reliable and less theoretical than the King's Indian Defense.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "d6", "uci": "d7d6", "annotation": "!", "comment": "The Old Indian! Flexible and solid" }
+  ],
+  "variations": [
+    {
+      "id": "normal",
+      "name": "Normal Variation",
+      "eco": "A55",
+      "difficulty": "intermediate",
+      "description": "The main line where Black plays e5 and Nbd7. Solid central structure with good piece play.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e5", "uci": "e7e5", "comment": "Challenging the center" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nbd7", "uci": "b8d7", "annotation": "!", "comment": "The Normal Variation - classical development" },
+        { "san": "e4", "uci": "e2e4", "comment": "Building a strong center" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Simple development" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid pawn structure" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting the center" },
+        { "san": "Qc7", "uci": "d8c7" }
+      ]
+    },
+    {
+      "id": "ukrainian",
+      "name": "Ukrainian Variation",
+      "eco": "A54",
+      "difficulty": "intermediate",
+      "description": "Black plays e5 immediately. Sharp and direct, fighting for central control right away.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The Ukrainian! Immediate central strike" },
+        { "san": "e4", "uci": "e2e4", "comment": "White accepts the challenge" },
+        { "san": "exd4", "uci": "e5d4", "comment": "Opening lines" },
+        { "san": "Qxd4", "uci": "d1d4", "comment": "Centralized queen" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Qd2", "uci": "d4d2", "comment": "Retreating" },
+        { "san": "g6", "uci": "g7g6", "comment": "Fianchetto setup" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Be2", "uci": "f1e2" }
+      ]
+    },
+    {
+      "id": "janowski",
+      "name": "Janowski Variation",
+      "eco": "A54",
+      "difficulty": "beginner",
+      "description": "Black plays Bg4, pinning the knight early. Simple and straightforward approach.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bg4", "uci": "c8g4", "annotation": "!", "comment": "The Janowski! Early pin" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid development" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "e5", "uci": "e7e5" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "h3", "uci": "h2h3", "comment": "Asking the bishop's intentions" }
+      ]
+    },
+    {
+      "id": "main-line",
+      "name": "Main Line",
+      "eco": "A55",
+      "difficulty": "intermediate",
+      "description": "Classical setup with Be7 and O-O. Solid and reliable, good for positional players.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Developing the knight" },
+        { "san": "e4", "uci": "e2e4", "comment": "Building the center" },
+        { "san": "e5", "uci": "e7e5" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Re8", "uci": "f8e8", "comment": "Supporting e5" },
+        { "san": "d5", "uci": "d4d5", "annotation": "!", "comment": "Closing the center" },
+        { "san": "Nc5", "uci": "d7c5", "comment": "Heading for e6" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "solid", "flexible", "positional", "beginner-friendly"]
+}

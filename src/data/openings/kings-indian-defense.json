@@ -1,0 +1,154 @@
+{
+  "id": "kings-indian-defense",
+  "name": "King's Indian Defense",
+  "eco": "E60-E99",
+  "color": "black",
+  "description": "A hypermodern defense where Black allows White to build a strong center, then counterattacks it with pawn breaks like f5 or c5. Leads to dynamic, unbalanced positions with opposite-side attacks.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "g6", "uci": "g7g6", "comment": "The King's Indian setup - fianchettoing the bishop" }
+  ],
+  "variations": [
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "E97",
+      "difficulty": "advanced",
+      "description": "The main line of the King's Indian. Both sides castle kingside and launch opposite-side attacks. Very sharp and tactical.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bg7", "uci": "f8g7", "comment": "The King's Indian bishop - a powerful piece" },
+        { "san": "e4", "uci": "e2e4", "comment": "White builds a strong center" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center, preparing to castle" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "O-O", "uci": "e8g8", "comment": "Castling into safety" },
+        { "san": "Be2", "uci": "f1e2", "comment": "The Classical setup" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The key break! Challenging White's center" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing with pressure" },
+        { "san": "d5", "uci": "d4d5", "comment": "Closing the center" },
+        { "san": "Ne7", "uci": "c6e7", "comment": "Rerouting the knight to f5 or g6" },
+        { "san": "Ne1", "uci": "f3e1", "comment": "Planning Nd3 and f3 to support the center" },
+        { "san": "Nd7", "uci": "b8d7", "comment": "Preparing f5 break" },
+        { "san": "Nd3", "uci": "e1d3" }
+      ]
+    },
+    {
+      "id": "samisch",
+      "name": "Sämisch Variation",
+      "eco": "E81",
+      "difficulty": "advanced",
+      "description": "White plays f3 to build a massive center. Black often attacks on the queenside or kingside. Very strategic and positional.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "e4", "uci": "e2e4" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "f3", "uci": "f2f3", "annotation": "!", "comment": "The Sämisch! Building an imposing center" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Solid development" },
+        { "san": "e5", "uci": "e7e5" },
+        { "san": "Nge2", "uci": "g1e2", "comment": "Knight to e2 to support d4" },
+        { "san": "c6", "uci": "c7c6", "comment": "Preparing b5 queenside expansion" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Connecting rooks and preparing long castle" },
+        { "san": "a6", "uci": "a7a6", "comment": "Preparing b5" },
+        { "san": "Rd1", "uci": "a1d1" },
+        { "san": "b5", "uci": "b7b5", "annotation": "!", "comment": "Queenside counterplay begins" }
+      ]
+    },
+    {
+      "id": "four-pawns",
+      "name": "Four Pawns Attack",
+      "eco": "E76",
+      "difficulty": "advanced",
+      "description": "White's most aggressive setup with four center pawns. Black must play accurately to exploit the overextension. Very tactical.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "e4", "uci": "e2e4" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "f4", "uci": "f2f4", "annotation": "!", "comment": "The Four Pawns Attack! Maximum aggression" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "Striking at the center immediately" },
+        { "san": "d5", "uci": "d4d5", "comment": "Keeping the center closed" },
+        { "san": "e6", "uci": "e7e6", "comment": "Undermining the center" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "exd5", "uci": "e6d5" },
+        { "san": "cxd5", "uci": "c4d5", "comment": "Opening lines" },
+        { "san": "O-O", "uci": "e1g1" }
+      ]
+    },
+    {
+      "id": "fianchetto",
+      "name": "Fianchetto Variation",
+      "eco": "E62",
+      "difficulty": "intermediate",
+      "description": "White also fianchettoes the kingside bishop, leading to a more positional struggle. Less forcing than other lines.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "g3", "uci": "g2g3", "annotation": "!", "comment": "The Fianchetto! White mirrors Black's setup" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Flexible development" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "a6", "uci": "a7a6", "comment": "Preparing b5 or Rb8" },
+        { "san": "d5", "uci": "d4d5", "comment": "Fixing the center" },
+        { "san": "Na5", "uci": "c6a5", "comment": "Heading for c5" },
+        { "san": "Nd2", "uci": "f3d2", "comment": "Preparing e4" }
+      ]
+    },
+    {
+      "id": "averbakh",
+      "name": "Averbakh Variation",
+      "eco": "E73",
+      "difficulty": "intermediate",
+      "description": "White develops the bishop to e2 and plays Be3, maintaining flexibility. A solid and popular system.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "e4", "uci": "e2e4" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Be3", "uci": "c1e3", "annotation": "!", "comment": "The Averbakh System - solid and flexible" },
+        { "san": "e5", "uci": "e7e5" },
+        { "san": "d5", "uci": "d4d5", "comment": "Closing the center" },
+        { "san": "Nfd7", "uci": "f6d7", "comment": "Preparing f5" },
+        { "san": "g4", "uci": "g2g4", "annotation": "!", "comment": "Aggressive! Preventing f5" },
+        { "san": "f5", "uci": "f7f5", "comment": "Fighting for space anyway" },
+        { "san": "gxf5", "uci": "g4f5" },
+        { "san": "gxf5", "uci": "g6f5" }
+      ]
+    },
+    {
+      "id": "petrosian",
+      "name": "Petrosian System",
+      "eco": "E93",
+      "difficulty": "intermediate",
+      "description": "White plays d5 early, closing the center. Named after World Champion Petrosian. Strategic and maneuvering.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "e4", "uci": "e2e4" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "e5", "uci": "e7e5" },
+        { "san": "d5", "uci": "d4d5", "annotation": "!", "comment": "The Petrosian! Closing the center early" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Preparing to reorganize pieces" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Pinning the knight" },
+        { "san": "h6", "uci": "h7h6" },
+        { "san": "Bh4", "uci": "g5h4" },
+        { "san": "g5", "uci": "g7g5", "comment": "Kicking the bishop" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "hypermodern", "dynamic", "counterattack", "sharp"]
+}

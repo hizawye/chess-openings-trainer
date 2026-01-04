@@ -1,0 +1,148 @@
+{
+  "id": "caro-kann-defense",
+  "name": "Caro-Kann Defense",
+  "eco": "B10-B19",
+  "color": "black",
+  "description": "A solid and reliable defense against 1.e4. Black builds a strong pawn structure and aims for a safe position with good piece activity. Popular among players seeking a solid reputation.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "c6", "uci": "c7c6", "comment": "The Caro-Kann! Preparing d5 with pawn support" }
+  ],
+  "variations": [
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "B18",
+      "difficulty": "intermediate",
+      "description": "The main line of the Caro-Kann. Black develops solidly and aims for a slight space disadvantage with good piece play.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4", "comment": "White establishes a strong center" },
+        { "san": "d5", "uci": "d7d5", "comment": "Challenging the e4 pawn immediately" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Defending the e4 pawn" },
+        { "san": "dxe4", "uci": "d5e4", "comment": "Trading in the center" },
+        { "san": "Nxe4", "uci": "c3e4" },
+        { "san": "Bf5", "uci": "c8f5", "annotation": "!", "comment": "The key move! Developing the problem bishop outside the pawn chain" },
+        { "san": "Ng3", "uci": "e4g3", "comment": "Attacking the bishop" },
+        { "san": "Bg6", "uci": "f5g6" },
+        { "san": "h4", "uci": "h2h4", "comment": "Starting a pawn storm on the kingside" },
+        { "san": "h6", "uci": "h7h6", "comment": "Preventing h5 and keeping the bishop" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing and preparing to castle" },
+        { "san": "Nd7", "uci": "b8d7", "comment": "Solid development" },
+        { "san": "h5", "uci": "h4h5" },
+        { "san": "Bh7", "uci": "g6h7" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Trading the light-squared bishops" }
+      ]
+    },
+    {
+      "id": "advance",
+      "name": "Advance Variation",
+      "eco": "B12",
+      "difficulty": "beginner",
+      "description": "White gains space with c4-c5 but gives Black clear counterplay targets. A good system for beginners to understand pawn structures.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "e5", "uci": "e4e5", "annotation": "!", "comment": "The Advance Variation! White gains space" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing the bishop before playing e6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "e6", "uci": "e7e6", "comment": "Preparing to undermine the center with c5" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "c5", "uci": "c6c5", "annotation": "!", "comment": "Striking at White's center" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Defending the d4 pawn" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing and adding pressure to d4" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "Qb6", "uci": "d8b6", "comment": "Attacking both b2 and d4" },
+        { "san": "Nbd2", "uci": "b1d2" }
+      ]
+    },
+    {
+      "id": "panov-botvinnik",
+      "name": "Panov-Botvinnik Attack",
+      "eco": "B13",
+      "difficulty": "intermediate",
+      "description": "White sacrifices the central pawn structure for active piece play. Leads to open positions with isolated queen pawn structures.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "exd5", "uci": "e4d5", "comment": "The Panov Attack! Trading for open lines" },
+        { "san": "cxd5", "uci": "c6d5" },
+        { "san": "c4", "uci": "c2c4", "annotation": "!", "comment": "Attacking the d5 pawn, creating an isolated queen pawn" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and defending" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Pressuring d5" },
+        { "san": "e6", "uci": "e7e6", "comment": "Supporting the center pawn" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "cxd5", "uci": "c4d5", "comment": "Creating the isolated pawn" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing with attacking potential" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "exchange",
+      "name": "Exchange Variation",
+      "eco": "B13",
+      "difficulty": "beginner",
+      "description": "A simple and solid system where White trades pawns early. Leads to symmetrical positions with equal chances.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "exd5", "uci": "e4d5", "comment": "The Exchange Variation - simple and solid" },
+        { "san": "cxd5", "uci": "c6d5" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing toward the kingside" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Natural development" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing the bishop to an active square" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Mirroring White's development" },
+        { "san": "Qb3", "uci": "d1b3", "comment": "Attacking b7 and putting pressure on Black" },
+        { "san": "Qd7", "uci": "d8d7", "comment": "Defending and preparing to castle" }
+      ]
+    },
+    {
+      "id": "fantasy",
+      "name": "Fantasy Variation",
+      "eco": "B12",
+      "difficulty": "intermediate",
+      "description": "An aggressive try by White with f3. Creates a strong center but weakens the kingside. Sharp tactical play.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "f3", "uci": "f2f3", "annotation": "!?", "comment": "The Fantasy Variation! Aggressive but weakening" },
+        { "san": "dxe4", "uci": "d5e4", "comment": "Accepting the challenge" },
+        { "san": "fxe4", "uci": "f3e4", "comment": "White has a strong center but weak kingside" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "Striking back at the center" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing and attacking e5" },
+        { "san": "exd4", "uci": "e5d4", "comment": "Opening the position" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Targeting f7" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and attacking e4" },
+        { "san": "e5", "uci": "e4e5", "comment": "Pushing the knight back" },
+        { "san": "Nd5", "uci": "f6d5" }
+      ]
+    },
+    {
+      "id": "two-knights",
+      "name": "Two Knights Attack",
+      "eco": "B11",
+      "difficulty": "advanced",
+      "description": "A sharp and tactical line where White develops both knights before deciding on the pawn structure. Requires precise play from both sides.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "dxe4", "uci": "d5e4" },
+        { "san": "Nxe4", "uci": "c3e4" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and attacking the knight" },
+        { "san": "Nxf6+", "uci": "e4f6", "annotation": "!", "comment": "The Two Knights Attack! Doubling Black's pawns" },
+        { "san": "gxf6", "uci": "g7f6", "comment": "Black accepts doubled pawns for the bishop pair" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing actively" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Qd5", "uci": "d8d5", "comment": "Centralizing the queen" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Preparing to castle" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid pawn structure" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "solid", "positional", "beginner-friendly", "defensive"]
+}

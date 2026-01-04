@@ -1,0 +1,149 @@
+{
+  "id": "grunfeld-defense",
+  "name": "Grünfeld Defense",
+  "eco": "D70-D99",
+  "color": "black",
+  "description": "A hypermodern defense where Black allows White a strong center, then attacks it with d5 and the fianchettoed bishop. Sharp, tactical, and popular at the highest levels. Favored by Fischer and Kasparov.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "g6", "uci": "g7g6" },
+    { "san": "Nc3", "uci": "b1c3" },
+    { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "The Grünfeld! Challenging the center immediately" }
+  ],
+  "variations": [
+    {
+      "id": "exchange",
+      "name": "Exchange Variation",
+      "eco": "D85",
+      "difficulty": "advanced",
+      "description": "The main line where White exchanges on d5. Black gets the bishop pair and pressure on White's center. Very sharp and theoretical.",
+      "moves": [
+        { "san": "cxd5", "uci": "c4d5", "comment": "The Exchange Variation - most popular" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "e4", "uci": "e2e4", "comment": "Strong center" },
+        { "san": "Nxc3", "uci": "d5c3" },
+        { "san": "bxc3", "uci": "b2c3", "comment": "Doubled pawns but strong center" },
+        { "san": "Bg7", "uci": "f8g7", "annotation": "!", "comment": "The Grünfeld bishop - powerful on the long diagonal" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "Undermining White's center" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Defending d4" },
+        { "san": "Qa5", "uci": "d8a5", "comment": "Attacking c3" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Defending and preparing Rc1" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing with pressure" },
+        { "san": "Rc1", "uci": "a1c1", "comment": "Defending c3" },
+        { "san": "cxd4", "uci": "c5d4" }
+      ]
+    },
+    {
+      "id": "russian",
+      "name": "Russian Variation",
+      "eco": "D97",
+      "difficulty": "advanced",
+      "description": "White plays Qb3, creating immediate threats. Very sharp and tactical. Requires precise play from both sides.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Qb3", "uci": "d1b3", "annotation": "!", "comment": "The Russian System! Attacking b7 and d5" },
+        { "san": "dxc4", "uci": "d5c4", "comment": "Taking the pawn" },
+        { "san": "Qxc4", "uci": "b3c4" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "e4", "uci": "e2e4", "comment": "Building a strong center" },
+        { "san": "Bg4", "uci": "c8g4", "annotation": "!", "comment": "Pinning the knight" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Developing" },
+        { "san": "Nfd7", "uci": "f6d7", "comment": "Preparing to challenge the center" },
+        { "san": "Qb3", "uci": "c4b3", "comment": "Attacking b7 again" },
+        { "san": "Nb6", "uci": "d7b6", "comment": "Defending b7" },
+        { "san": "Rd1", "uci": "a1d1", "comment": "Centralizing the rook" }
+      ]
+    },
+    {
+      "id": "three-knights",
+      "name": "Three Knights Variation",
+      "eco": "D90",
+      "difficulty": "intermediate",
+      "description": "White plays Nf3 before deciding on the pawn structure. Flexible and solid approach to the Grünfeld.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3", "comment": "Flexible development" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "e3", "uci": "e2e3", "annotation": "!", "comment": "The Three Knights - solid and flexible" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing" },
+        { "san": "dxc4", "uci": "d5c4" },
+        { "san": "Bxc4", "uci": "d3c4" },
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "exd4", "uci": "e3d4" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing with pressure" }
+      ]
+    },
+    {
+      "id": "fianchetto",
+      "name": "Fianchetto Variation",
+      "eco": "D77",
+      "difficulty": "intermediate",
+      "description": "White also fianchettoes the kingside bishop. More positional and less forcing than other variations.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "g3", "uci": "g2g3", "annotation": "!", "comment": "The Fianchetto! Solid and positional" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "dxc4", "uci": "d5c4", "comment": "Taking the pawn" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "Qa4", "uci": "d1a4", "comment": "Attacking c4" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Developing and pinning" },
+        { "san": "Qxc4", "uci": "a4c4", "comment": "Regaining the pawn" },
+        { "san": "Bxf3", "uci": "g4f3", "comment": "Trading the bishop" }
+      ]
+    },
+    {
+      "id": "modern-exchange",
+      "name": "Modern Exchange",
+      "eco": "D85",
+      "difficulty": "advanced",
+      "description": "A modern approach to the Exchange variation with Rb1. Fighting for space on the queenside.",
+      "moves": [
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "e4", "uci": "e2e4" },
+        { "san": "Nxc3", "uci": "d5c3" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "Rb1", "uci": "a1b1", "annotation": "!", "comment": "The Modern Exchange! Preparing b4" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Solid development" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "cxd4", "uci": "c3d4" },
+        { "san": "Qa5+", "uci": "d8a5", "comment": "Check and attacking the center" }
+      ]
+    },
+    {
+      "id": "bf4-system",
+      "name": "Bf4 System",
+      "eco": "D83",
+      "difficulty": "intermediate",
+      "description": "White plays Bf4 early, similar to the London System. Solid and positional approach to the Grünfeld.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Bf4", "uci": "c1f4", "annotation": "!", "comment": "The Bf4 System - solid and simple" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid pawn structure" },
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "dxc5", "uci": "d4c5", "comment": "Trading pawns" },
+        { "san": "Qa5", "uci": "d8a5", "comment": "Regaining the pawn" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "Qxc5", "uci": "a5c5" },
+        { "san": "Nxc3", "uci": "d5c3" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "hypermodern", "sharp", "tactical", "world-class"]
+}

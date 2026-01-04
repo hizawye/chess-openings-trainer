@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronRight, BookOpen, CheckCircle } from 'lucide-react';
 import type { Opening, Variation } from '../../types';
+import type { CategorizedOpenings } from '../../utils/categorizeOpenings';
 import styles from './OpeningList.module.css';
 
 interface OpeningListProps {
-  openings: Opening[];
+  categorizedOpenings: CategorizedOpenings[];
   onSelectVariation: (opening: Opening, variation: Variation) => void;
   progress?: Record<string, Record<string, boolean>>;
 }
 
 export default function OpeningList({
-  openings,
+  categorizedOpenings,
   onSelectVariation,
   progress = {},
 }: OpeningListProps) {
@@ -54,46 +55,61 @@ export default function OpeningList({
 
   return (
     <div className={styles.list}>
-      {openings.map((opening) => {
-        const isExpanded = expandedOpenings.has(opening.id);
-        const completed = getCompletedCount(opening);
-        const total = getTotalVariations(opening);
-
-        return (
-          <div key={opening.id} className={styles.openingItem}>
-            <button
-              className={styles.openingHeader}
-              onClick={() => toggleOpening(opening.id)}
-            >
-              <div className={styles.openingInfo}>
-                {isExpanded ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
-                <BookOpen size={20} className={styles.icon} />
-                <div className={styles.openingText}>
-                  <span className={styles.openingName}>{opening.name}</span>
-                  <span className={styles.openingMeta}>
-                    {opening.eco} · {opening.color === 'white' ? 'White' : 'Black'}
-                  </span>
-                </div>
-              </div>
-              <div className={styles.progress}>
-                {completed}/{total}
-              </div>
-            </button>
-
-            {isExpanded && (
-              <div className={styles.variations}>
-                <p className={styles.description}>{opening.description}</p>
-                <VariationTree
-                  variations={opening.variations}
-                  openingId={opening.id}
-                  onSelect={(variation) => onSelectVariation(opening, variation)}
-                  isCompleted={isVariationCompleted}
-                />
-              </div>
+      {categorizedOpenings.map((group) => (
+        <div key={group.categoryId} className={styles.categoryGroup}>
+          <div className={styles.categoryHeader}>
+            <h2>{group.categoryName}</h2>
+            {group.description && (
+              <p className={styles.categoryDesc}>{group.description}</p>
             )}
+            <span className={styles.count}>
+              {group.openings.length} opening{group.openings.length !== 1 ? 's' : ''}
+            </span>
           </div>
-        );
-      })}
+          <div className={styles.openingCards}>
+            {group.openings.map((opening) => {
+              const isExpanded = expandedOpenings.has(opening.id);
+              const completed = getCompletedCount(opening);
+              const total = getTotalVariations(opening);
+
+              return (
+                <div key={opening.id} className={styles.openingItem}>
+                  <button
+                    className={styles.openingHeader}
+                    onClick={() => toggleOpening(opening.id)}
+                  >
+                    <div className={styles.openingInfo}>
+                      {isExpanded ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
+                      <BookOpen size={20} className={styles.icon} />
+                      <div className={styles.openingText}>
+                        <span className={styles.openingName}>{opening.name}</span>
+                        <span className={styles.openingMeta}>
+                          {opening.eco} · {opening.color === 'white' ? 'White' : 'Black'}
+                        </span>
+                      </div>
+                    </div>
+                    <div className={styles.progress}>
+                      {completed}/{total}
+                    </div>
+                  </button>
+
+                  {isExpanded && (
+                    <div className={styles.variations}>
+                      <p className={styles.description}>{opening.description}</p>
+                      <VariationTree
+                        variations={opening.variations}
+                        openingId={opening.id}
+                        onSelect={(variation) => onSelectVariation(opening, variation)}
+                        isCompleted={isVariationCompleted}
+                      />
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

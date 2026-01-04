@@ -3,13 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { Search } from 'lucide-react';
 import { OpeningList } from '../components/openings';
 import { openings, searchOpenings } from '../data/openings';
+import { firstMoveCategories, styleCategories } from '../data/categories';
+import { categorizeOpenings } from '../utils/categorizeOpenings';
 import type { Opening, Variation } from '../types';
+import type { CategoryType } from '../data/categories';
 import styles from './OpeningsPage.module.css';
 
 export default function OpeningsPage() {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [colorFilter, setColorFilter] = useState<'all' | 'white' | 'black'>('all');
+  const [categoryType, setCategoryType] = useState<CategoryType>('first-move');
 
   const filteredOpenings = (() => {
     let result = searchQuery ? searchOpenings(searchQuery) : openings;
@@ -18,6 +22,11 @@ export default function OpeningsPage() {
     }
     return result;
   })();
+
+  const categorizedOpenings = categorizeOpenings(
+    filteredOpenings,
+    categoryType === 'first-move' ? firstMoveCategories : styleCategories
+  );
 
   const handleSelectVariation = (opening: Opening, variation: Variation) => {
     navigate(`/train/${opening.id}/${variation.id}`);
@@ -30,6 +39,21 @@ export default function OpeningsPage() {
         <p className={styles.subtitle}>
           Select an opening to practice. Master the moves through repetition.
         </p>
+      </div>
+
+      <div className={styles.tabs}>
+        <button
+          className={categoryType === 'first-move' ? styles.activeTab : styles.tab}
+          onClick={() => setCategoryType('first-move')}
+        >
+          By First Move
+        </button>
+        <button
+          className={categoryType === 'style' ? styles.activeTab : styles.tab}
+          onClick={() => setCategoryType('style')}
+        >
+          By Style
+        </button>
       </div>
 
       <div className={styles.filters}>
@@ -67,7 +91,7 @@ export default function OpeningsPage() {
       </div>
 
       <OpeningList
-        openings={filteredOpenings}
+        categorizedOpenings={categorizedOpenings}
         onSelectVariation={handleSelectVariation}
       />
     </div>

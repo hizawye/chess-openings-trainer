@@ -1,0 +1,124 @@
+{
+  "id": "kings-indian-attack",
+  "name": "King's Indian Attack",
+  "eco": "A07-A08",
+  "color": "white",
+  "description": "A universal system where White plays Nf3, g3, Bg2, O-O, and d3 regardless of Black's setup. Flexible and easy to learn. Named after Bobby Fischer who used it successfully.",
+  "startingMoves": [
+    { "san": "Nf3", "uci": "g1f3", "comment": "The King's Indian Attack - a universal system" },
+    { "san": "d5", "uci": "d7d5" },
+    { "san": "g3", "uci": "g2g3", "annotation": "!", "comment": "Fianchetto setup" }
+  ],
+  "variations": [
+    {
+      "id": "vs-french-setup",
+      "name": "KIA vs French Setup",
+      "eco": "A07",
+      "difficulty": "beginner",
+      "description": "Against a French-like pawn structure. White plays for a kingside attack while Black has queenside play.",
+      "moves": [
+        { "san": "c5", "uci": "c7c5", "comment": "French structure" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid center" },
+        { "san": "d3", "uci": "d2d3", "comment": "The KIA structure - d3 instead of d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Preparing e4" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "Central break" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting e4" },
+        { "san": "Qc7", "uci": "d8c7", "comment": "Preparing queenside play" }
+      ]
+    },
+    {
+      "id": "vs-caro-kann-setup",
+      "name": "KIA vs Caro-Kann Setup",
+      "eco": "A07",
+      "difficulty": "beginner",
+      "description": "Against Black's Caro-Kann structure. Strategic maneuvering with kingside expansion.",
+      "moves": [
+        { "san": "c6", "uci": "c7c6", "comment": "Caro-Kann structure" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing the bishop outside" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "d3", "uci": "d2d3" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "e4", "uci": "e2e4", "comment": "Central expansion" },
+        { "san": "Bg6", "uci": "f5g6" },
+        { "san": "Qe2", "uci": "d1e2", "comment": "Preparing to push e5" }
+      ]
+    },
+    {
+      "id": "vs-sicilian-setup",
+      "name": "KIA vs Sicilian Setup",
+      "eco": "A08",
+      "difficulty": "intermediate",
+      "description": "Used against Sicilian structures. White avoids the sharp Open Sicilian and plays for a slow buildup.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6", "comment": "Flexible" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "c5", "uci": "c7c5", "comment": "Sicilian structure" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "d3", "uci": "d2d3", "comment": "Avoiding d4" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "Playing for central control" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Re1", "uci": "f1e1" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "universal-setup",
+      "name": "Universal Setup",
+      "eco": "A07",
+      "difficulty": "beginner",
+      "description": "The basic KIA structure that works against any Black setup. Simple and effective for beginners.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "g6", "uci": "g7g6", "comment": "Black also fianchettoes" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "d3", "uci": "d2d3", "comment": "The universal KIA setup" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Preparing e4" },
+        { "san": "c6", "uci": "c7c6" },
+        { "san": "e4", "uci": "e2e4", "comment": "Central expansion" },
+        { "san": "dxe4", "uci": "d5e4" },
+        { "san": "dxe4", "uci": "d3e4", "comment": "Strong center" }
+      ]
+    },
+    {
+      "id": "spassky-variation",
+      "name": "Spassky Variation",
+      "eco": "A07",
+      "difficulty": "intermediate",
+      "description": "Named after World Champion Boris Spassky. An aggressive version with h4-h5 pawn storm.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "d3", "uci": "d2d3" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "e4", "uci": "e2e4", "comment": "Central expansion" },
+        { "san": "dxe4", "uci": "d5e4" },
+        { "san": "dxe4", "uci": "d3e4" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "h4", "uci": "h2h4", "annotation": "!", "comment": "The Spassky! Aggressive pawn storm" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "h5", "uci": "h4h5", "comment": "Continuing the attack" }
+      ]
+    }
+  ],
+  "tags": ["universal", "beginner-friendly", "flexible", "positional", "Fischer"]
+}

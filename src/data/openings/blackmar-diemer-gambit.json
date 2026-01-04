@@ -1,0 +1,125 @@
+{
+  "id": "blackmar-diemer-gambit",
+  "name": "Blackmar-Diemer Gambit",
+  "eco": "D00",
+  "color": "white",
+  "description": "An aggressive gambit where White sacrifices a pawn with e4 after 1.d4 d5 2.e4. Sharp, tactical, and uncompromising. Named after Armand Blackmar and Emil Josef Diemer. Popular among attacking players who love tactics over positional play. Very dangerous if Black is unprepared.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "d5", "uci": "d7d5" },
+    { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "The Blackmar-Diemer Gambit! Sacrificing for initiative" },
+    { "san": "dxe4", "uci": "d5e4", "comment": "Accepting the gambit" },
+    { "san": "Nc3", "uci": "b1c3", "comment": "Attacking the pawn" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "f3", "uci": "f2f3", "annotation": "!", "comment": "The characteristic BDG move!" }
+  ],
+  "variations": [
+    {
+      "id": "accepted",
+      "name": "BDG Accepted",
+      "eco": "D00",
+      "difficulty": "intermediate",
+      "description": "Black accepts the gambit and White gets rapid development and attacking chances. Sharp tactical play ahead.",
+      "moves": [
+        { "san": "exf3", "uci": "e4f3", "comment": "Accepting the second pawn" },
+        { "san": "Nxf3", "uci": "g1f3", "comment": "Rapid development" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid setup" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing with attack" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Quick castling" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bg5", "uci": "c1g5", "annotation": "!", "comment": "Typical BDG attack" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Preparing Rad1 or Rae1" },
+        { "san": "c5", "uci": "c7c5", "comment": "Counterattack" },
+        { "san": "Rad1", "uci": "a1d1", "annotation": "!", "comment": "All pieces attacking!" }
+      ]
+    },
+    {
+      "id": "euwe-defense",
+      "name": "Euwe Defense",
+      "eco": "D00",
+      "difficulty": "advanced",
+      "description": "Black plays e6 and c5, the solid Euwe Defense. Named after world champion Max Euwe. Sound but requires accurate play.",
+      "moves": [
+        { "san": "e6", "uci": "e7e6", "annotation": "!", "comment": "The Euwe! Solid and principled" },
+        { "san": "fxe4", "uci": "f3e4", "comment": "Regaining the pawn" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Attacking the knight" },
+        { "san": "Nf6", "uci": "e4f6", "comment": "Retreating" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Typical attack" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "Counterattack in center" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting d4" },
+        { "san": "Nc6", "uci": "b8c6" }
+      ]
+    },
+    {
+      "id": "lemberger-counter",
+      "name": "Lemberger Counter-Gambit",
+      "eco": "D00",
+      "difficulty": "advanced",
+      "description": "Black plays e5, offering a counter-gambit! Very sharp and double-edged. Named after Kazimierz Lemberger.",
+      "moves": [
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The Lemberger! Counter-gambit" },
+        { "san": "dxe5", "uci": "d4e5", "comment": "Accepting" },
+        { "san": "Qxd1+", "uci": "d8d1", "annotation": "!", "comment": "Forcing a queen trade" },
+        { "san": "Kxd1", "uci": "e1d1", "comment": "King to the center" },
+        { "san": "Ng4", "uci": "f6g4", "comment": "Attacking e5" },
+        { "san": "fxe4", "uci": "f3e4", "comment": "Opening lines" },
+        { "san": "Nxe5", "uci": "g4e5" },
+        { "san": "Nxe5", "uci": "c3e5", "comment": "Trading knights" },
+        { "san": "Bc5", "uci": "f8c5", "annotation": "!", "comment": "Active bishop" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nf3", "uci": "g1f3" }
+      ]
+    },
+    {
+      "id": "vienna-defense",
+      "name": "Vienna Defense",
+      "eco": "D00",
+      "difficulty": "intermediate",
+      "description": "Black plays Bf5, the Vienna Defense. Developing outside the pawn chain before accepting the gambit.",
+      "moves": [
+        { "san": "Bf5", "uci": "c8f5", "annotation": "!", "comment": "The Vienna! Developing first" },
+        { "san": "fxe4", "uci": "f3e4", "comment": "Opening lines" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "Qf3", "uci": "d1f3", "annotation": "!", "comment": "Attacking f5 and e4" },
+        { "san": "Qd7", "uci": "d8d7", "comment": "Defending" },
+        { "san": "Nxe4", "uci": "c3e4", "comment": "Trading" },
+        { "san": "Bxe4", "uci": "f5e4" },
+        { "san": "Qxe4", "uci": "f3e4", "comment": "Centralized queen" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing with tempo" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Solid development" },
+        { "san": "O-O-O", "uci": "e8c8", "comment": "Queenside castling" },
+        { "san": "O-O-O", "uci": "e1c8", "comment": "Opposite side castling - sharp!" }
+      ]
+    },
+    {
+      "id": "declined",
+      "name": "BDG Declined",
+      "eco": "D00",
+      "difficulty": "beginner",
+      "description": "Black declines the gambit with Nf6 and e3. White gets a normal position without compensation for the pawn.",
+      "moves": [
+        { "san": "e3", "uci": "e7e3", "annotation": "!", "comment": "Declining! Giving back the pawn" },
+        { "san": "Bxe3", "uci": "c1e3", "comment": "Recapturing" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Developing with tempo" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nge2", "uci": "g1e2", "comment": "Flexible knight" },
+        { "san": "Bxc3+", "uci": "b4c3", "comment": "Trading pieces" },
+        { "san": "Nxc3", "uci": "e2c3" },
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "d5", "uci": "d4d5", "comment": "Central thrust" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "gambit", "tactical", "aggressive", "sharp", "sacrificial"]
+}

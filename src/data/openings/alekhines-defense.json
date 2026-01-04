@@ -1,0 +1,120 @@
+{
+  "id": "alekhines-defense",
+  "name": "Alekhine's Defense",
+  "eco": "B02-B05",
+  "color": "black",
+  "description": "A provocative hypermodern defense where Black's knight invites White's pawns forward, then attacks the overextended center. Named after World Champion Alexander Alekhine. Sharp and double-edged.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "Nf6", "uci": "g8f6", "annotation": "!", "comment": "Alekhine's Defense! Provoking White's pawns" }
+  ],
+  "variations": [
+    {
+      "id": "four-pawns-attack",
+      "name": "Four Pawns Attack",
+      "eco": "B03",
+      "difficulty": "advanced",
+      "description": "White's most aggressive response with four center pawns. Black must play accurately to exploit the overextension.",
+      "moves": [
+        { "san": "e5", "uci": "e4e5", "comment": "Chasing the knight" },
+        { "san": "Nd5", "uci": "f6d5" },
+        { "san": "c4", "uci": "c2c4", "comment": "Attacking the knight again" },
+        { "san": "Nb6", "uci": "d5b6" },
+        { "san": "d4", "uci": "d2d4", "comment": "Three pawns!" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "f4", "uci": "f2f4", "annotation": "!", "comment": "The Four Pawns Attack! Maximum aggression" },
+        { "san": "dxe5", "uci": "d6e5", "comment": "Opening lines" },
+        { "san": "fxe5", "uci": "f4e5" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing and attacking d4" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Defending c4" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing actively" },
+        { "san": "Nc3", "uci": "b1c3" }
+      ]
+    },
+    {
+      "id": "exchange",
+      "name": "Exchange Variation",
+      "eco": "B03",
+      "difficulty": "intermediate",
+      "description": "White exchanges on d5, leading to a more positional game. Less forcing but solid.",
+      "moves": [
+        { "san": "e5", "uci": "e4e5" },
+        { "san": "Nd5", "uci": "f6d5" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "c4", "uci": "c2c4" },
+        { "san": "Nb6", "uci": "d5b6" },
+        { "san": "exd6", "uci": "e5d6", "annotation": "!", "comment": "The Exchange Variation" },
+        { "san": "cxd6", "uci": "c7d6", "comment": "Opening the c-file" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Developing and pinning" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "O-O", "uci": "e1g8" }
+      ]
+    },
+    {
+      "id": "modern",
+      "name": "Modern Variation",
+      "eco": "B04",
+      "difficulty": "intermediate",
+      "description": "White plays Nf3 and Bc4, a flexible system. Strategic and less committal than the Four Pawns.",
+      "moves": [
+        { "san": "e5", "uci": "e4e5" },
+        { "san": "Nd5", "uci": "f6d5" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "g1f3", "annotation": "!", "comment": "The Modern Variation - flexible" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Developing" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "c4", "uci": "c2c4", "comment": "Attacking the knight" },
+        { "san": "Nb6", "uci": "d5b6" }
+      ]
+    },
+    {
+      "id": "chase",
+      "name": "Chase Variation",
+      "eco": "B02",
+      "difficulty": "beginner",
+      "description": "White continues chasing the knight with Nc3 and d4. Simple and straightforward.",
+      "moves": [
+        { "san": "e5", "uci": "e4e5" },
+        { "san": "Nd5", "uci": "f6d5" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Attacking the knight" },
+        { "san": "Nxc3", "uci": "d5c3", "comment": "Trading" },
+        { "san": "dxc3", "uci": "d2c3", "comment": "Recapturing" },
+        { "san": "d6", "uci": "d7d6", "comment": "Challenging the center" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg4", "uci": "c8g4" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Qd2", "uci": "d1d2" }
+      ]
+    },
+    {
+      "id": "two-pawns",
+      "name": "Two Pawns Attack",
+      "eco": "B02",
+      "difficulty": "intermediate",
+      "description": "A solid middle ground between the Chase and Four Pawns. White plays c4 and d4.",
+      "moves": [
+        { "san": "e5", "uci": "e4e5" },
+        { "san": "Nd5", "uci": "f6d5" },
+        { "san": "c4", "uci": "c2c4", "annotation": "!", "comment": "The Two Pawns Attack" },
+        { "san": "Nb6", "uci": "d5b6" },
+        { "san": "d4", "uci": "d2d4", "comment": "Two center pawns" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "exd6", "uci": "e5d6", "comment": "Opening lines" },
+        { "san": "cxd6", "uci": "c7d6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg4", "uci": "c8g4" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "Nc6", "uci": "b8c6" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "hypermodern", "provocative", "sharp", "Alekhine"]
+}

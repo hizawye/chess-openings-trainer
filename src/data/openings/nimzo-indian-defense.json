@@ -1,0 +1,146 @@
+{
+  "id": "nimzo-indian-defense",
+  "name": "Nimzo-Indian Defense",
+  "eco": "E20-E59",
+  "color": "black",
+  "description": "One of the most popular and respected defenses to 1.d4. Black pins the knight with Bb4, aiming to control e4 and potentially damage White's pawn structure. Used by world champions.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "e6", "uci": "e7e6" },
+    { "san": "Nc3", "uci": "b1c3" },
+    { "san": "Bb4", "uci": "f8b4", "annotation": "!", "comment": "The Nimzo-Indian! Pinning the knight and fighting for e4" }
+  ],
+  "variations": [
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "E32",
+      "difficulty": "intermediate",
+      "description": "The main line with Qc2. White avoids doubled pawns and prepares to castle. Strategic and positional.",
+      "moves": [
+        { "san": "Qc2", "uci": "d1c2", "comment": "Defending the knight and preparing e4" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "a3", "uci": "a2a3", "comment": "Asking the bishop's intentions" },
+        { "san": "Bxc3+", "uci": "b4c3", "comment": "Accepting doubled pawns to damage White's structure" },
+        { "san": "Qxc3", "uci": "c2c3" },
+        { "san": "b6", "uci": "b7b6", "comment": "Preparing Bb7 to control the long diagonal" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bb7", "uci": "c8b7", "comment": "Strong bishop on the long diagonal" },
+        { "san": "g3", "uci": "g2g3", "comment": "Fianchetto setup" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Developing and preparing e5" }
+      ]
+    },
+    {
+      "id": "rubinstein",
+      "name": "Rubinstein Variation",
+      "eco": "E40",
+      "difficulty": "intermediate",
+      "description": "White plays e3, creating a solid but slightly passive structure. Black has good piece activity and strategic chances.",
+      "moves": [
+        { "san": "e3", "uci": "e2e3", "annotation": "!", "comment": "The Rubinstein! Solid and flexible" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing and eyeing h7" },
+        { "san": "d5", "uci": "d7d5", "comment": "Challenging the center" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "Strike! Undermining White's center" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing with pressure" },
+        { "san": "a3", "uci": "a2a3" },
+        { "san": "Bxc3", "uci": "b4c3" },
+        { "san": "bxc3", "uci": "b2c3", "comment": "Doubled pawns but bishop pair" },
+        { "san": "dxc4", "uci": "d5c4" },
+        { "san": "Bxc4", "uci": "d3c4" }
+      ]
+    },
+    {
+      "id": "samisch",
+      "name": "Sämisch Variation",
+      "eco": "E25",
+      "difficulty": "advanced",
+      "description": "White accepts doubled pawns to get the bishop pair and strong center. Sharp and tactical play follows.",
+      "moves": [
+        { "san": "a3", "uci": "a2a3", "comment": "The Sämisch! Provoking the capture" },
+        { "san": "Bxc3+", "uci": "b4c3", "annotation": "!", "comment": "Taking the knight" },
+        { "san": "bxc3", "uci": "b2c3", "comment": "Doubled pawns but strong center and bishop pair" },
+        { "san": "c5", "uci": "c7c5", "comment": "Attacking the center" },
+        { "san": "f3", "uci": "f2f3", "annotation": "!", "comment": "Building a massive center" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "dxc5", "uci": "d4c5", "comment": "Grabbing space" },
+        { "san": "f6", "uci": "f7f6", "comment": "Preparing e5 to undermine the center" },
+        { "san": "e4", "uci": "e2e4", "comment": "The big pawn center" },
+        { "san": "Nf4", "uci": "d5f4" }
+      ]
+    },
+    {
+      "id": "leningrad",
+      "name": "Leningrad Variation",
+      "eco": "E30",
+      "difficulty": "intermediate",
+      "description": "White develops the bishop to g2 after Bg5. Strategic and flexible for both sides.",
+      "moves": [
+        { "san": "Bg5", "uci": "c1g5", "comment": "The Leningrad - developing and pinning" },
+        { "san": "h6", "uci": "h7h6", "comment": "Asking the bishop to declare" },
+        { "san": "Bh4", "uci": "g5h4" },
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "d5", "uci": "d4d5", "comment": "Gaining space" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid development" },
+        { "san": "Bxc3+", "uci": "b4c3" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "e5", "uci": "e6e5", "comment": "Opening lines" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Qe7", "uci": "d8e7", "comment": "Preparing to develop" }
+      ]
+    },
+    {
+      "id": "kasparov",
+      "name": "Kasparov Variation",
+      "eco": "E21",
+      "difficulty": "advanced",
+      "description": "White plays Nf3 and g3, avoiding the doubled pawns. Named after Kasparov who popularized this flexible system.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3", "comment": "Simple development" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "d5", "uci": "d4d5", "annotation": "!", "comment": "The Kasparov! Gaining space" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "exd5", "uci": "e6d5", "comment": "Opening the position" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Bxc3", "uci": "b4c3" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Developing and pinning" },
+        { "san": "h3", "uci": "h2h3" }
+      ]
+    },
+    {
+      "id": "hubner",
+      "name": "Hübner Variation",
+      "eco": "E41",
+      "difficulty": "advanced",
+      "description": "A modern system where Black plays 4...c5 immediately. Sharp and theoretical, leading to complex pawn structures.",
+      "moves": [
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "The Hübner! Immediate central strike" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing and adding pressure" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bxc3+", "uci": "b4c3" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid setup" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "e5", "uci": "e6e5", "comment": "Expanding in the center" },
+        { "san": "Nd2", "uci": "f3d2", "comment": "Preparing e4 or f4" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "positional", "strategic", "popular", "world-class"]
+}

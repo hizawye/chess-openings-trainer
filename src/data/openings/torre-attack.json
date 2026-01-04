@@ -1,0 +1,124 @@
+{
+  "id": "torre-attack",
+  "name": "Torre Attack",
+  "eco": "D03",
+  "color": "white",
+  "description": "A straightforward system opening where White plays d4, Nf3, Bg5, and e3. Simple to learn and hard to refute. Named after Mexican grandmaster Carlos Torre. Popular at all levels for its reliability and ease of play.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "e6", "uci": "e7e6" },
+    { "san": "Bg5", "uci": "c1g5", "annotation": "!", "comment": "The Torre Attack! Pinning the knight" }
+  ],
+  "variations": [
+    {
+      "id": "classical-system",
+      "name": "Classical System",
+      "eco": "D03",
+      "difficulty": "beginner",
+      "description": "The main Torre approach where White plays Nbd2 and e3. Simple, solid, and effective. Great for beginners.",
+      "moves": [
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid pawn structure" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Developing" },
+        { "san": "Nbd2", "uci": "b1d2", "annotation": "!", "comment": "The Classical Torre setup" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing the bishop" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "b6", "uci": "b7b6" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Reinforcing e3" }
+      ]
+    },
+    {
+      "id": "gruenfeld-variation",
+      "name": "Grünfeld Variation",
+      "eco": "D03",
+      "difficulty": "intermediate",
+      "description": "Black plays g6 and Bg7. White's bishop pair can be strong in this setup.",
+      "moves": [
+        { "san": "g6", "uci": "g7g6", "comment": "Fianchetto setup" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Developing" },
+        { "san": "Bg7", "uci": "f8g7", "annotation": "!", "comment": "The Grünfeld - King's Indian structure" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "Central expansion" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid pawn" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "e5", "uci": "e7e5", "comment": "Central break" },
+        { "san": "Re1", "uci": "f1e1" }
+      ]
+    },
+    {
+      "id": "wagner-gambit",
+      "name": "Wagner Gambit",
+      "eco": "D03",
+      "difficulty": "intermediate",
+      "description": "White plays e4 early, sacrificing a pawn for rapid development. Sharp and tactical.",
+      "moves": [
+        { "san": "h6", "uci": "h7h6", "comment": "Asking the bishop" },
+        { "san": "Bh4", "uci": "g5h4", "comment": "Retreating" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "The Wagner Gambit! Sharp" },
+        { "san": "cxd4", "uci": "c5d4", "comment": "Accepting" },
+        { "san": "e5", "uci": "e4e5", "annotation": "!", "comment": "Central wedge" },
+        { "san": "g5", "uci": "h6g5" },
+        { "san": "Bg3", "uci": "h4g3" },
+        { "san": "Nh5", "uci": "f6h5", "comment": "Attacking the bishop" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Regaining the pawn" },
+        { "san": "Nxg3", "uci": "h5g3" },
+        { "san": "hxg3", "uci": "h2g3", "comment": "Recapturing" }
+      ]
+    },
+    {
+      "id": "gossip-variation",
+      "name": "Gossip Variation",
+      "eco": "D03",
+      "difficulty": "beginner",
+      "description": "Black plays d5, and White plays c4 - transitioning to Queen's Gambit structures. Flexible and solid.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5", "comment": "Solid central pawn" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "c4", "uci": "c2c4", "annotation": "!", "comment": "The Gossip - Queen's Gambit ideas" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "h6", "uci": "h7h6", "comment": "Asking the bishop" },
+        { "san": "Bh4", "uci": "g5h4" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid structure" },
+        { "san": "O-O", "uci": "e1g8" }
+      ]
+    },
+    {
+      "id": "petrosian-attack",
+      "name": "Petrosian Attack",
+      "eco": "D03",
+      "difficulty": "intermediate",
+      "description": "White plays Bxf6, trading the bishop to damage Black's pawn structure. Strategic and positional.",
+      "moves": [
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "b6", "uci": "b7b6" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Bb7", "uci": "c8b7" },
+        { "san": "Bxf6", "uci": "g5f6", "annotation": "!", "comment": "The Petrosian! Trading to damage pawns" },
+        { "san": "Bxf6", "uci": "e7f6", "comment": "Doubled pawns" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Qe7", "uci": "d8e7" },
+        { "san": "e4", "uci": "e3e4", "comment": "Central expansion" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "system", "beginner-friendly", "solid", "positional"]
+}

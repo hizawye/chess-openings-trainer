@@ -1,0 +1,130 @@
+{
+  "id": "kings-gambit",
+  "name": "King's Gambit",
+  "eco": "C30-C39",
+  "color": "white",
+  "description": "One of the oldest and most romantic chess openings. White sacrifices a pawn with f4 to open lines and launch a kingside attack. Sharp, tactical, and aggressive - a favorite of legends like Spassky, Fischer, and Tal. Requires accurate play but offers exciting attacking chances.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "f4", "uci": "f2f4", "annotation": "!", "comment": "The King's Gambit! Sacrificing a pawn for rapid development and attack" }
+  ],
+  "variations": [
+    {
+      "id": "accepted-bishops-gambit",
+      "name": "King's Gambit Accepted - Bishop's Gambit",
+      "eco": "C33",
+      "difficulty": "intermediate",
+      "description": "The most popular line where Black accepts the gambit and White develops with Bc4. Sharp tactical play with chances for both sides.",
+      "moves": [
+        { "san": "exf4", "uci": "e5f4", "comment": "Accepting the gambit pawn" },
+        { "san": "Bc4", "uci": "f1c4", "annotation": "!", "comment": "The Bishop's Gambit - aiming at f7" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Counterattacking e4" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Defending and developing" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid central support" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing the knight" },
+        { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "Striking in the center" },
+        { "san": "exd5", "uci": "e4d5", "comment": "Trading" },
+        { "san": "cxd5", "uci": "c6d5" },
+        { "san": "Bb5+", "uci": "c4b5", "annotation": "!", "comment": "Check! Disrupting Black's development" },
+        { "san": "Bd7", "uci": "c8d7" },
+        { "san": "Bxd7+", "uci": "b5d7", "comment": "Trading bishops" },
+        { "san": "Nbxd7", "uci": "b8d7" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building a strong center" }
+      ]
+    },
+    {
+      "id": "fischer-defense",
+      "name": "Fischer Defense",
+      "eco": "C34",
+      "difficulty": "advanced",
+      "description": "Bobby Fischer's favorite defense against the King's Gambit. Black plays d6, a solid and flexible setup that has largely rehabilitated Black's chances in this gambit.",
+      "moves": [
+        { "san": "exf4", "uci": "e5f4" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "The King's Knight Gambit" },
+        { "san": "d6", "uci": "d7d6", "annotation": "!", "comment": "The Fischer Defense! Solid and flexible" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "g5", "uci": "g7g5", "comment": "Holding the f4 pawn" },
+        { "san": "h4", "uci": "h2h4", "annotation": "!", "comment": "Attacking the pawn chain" },
+        { "san": "g4", "uci": "g5g4" },
+        { "san": "Ne5", "uci": "f3e5", "comment": "Central outpost" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing with attack on e4" },
+        { "san": "Bxf4", "uci": "c1f4", "comment": "Regaining material" },
+        { "san": "Nxe4", "uci": "f6e4", "comment": "Counterattack" },
+        { "san": "Nd2", "uci": "b1d2", "comment": "Attacking the knight" },
+        { "san": "Nxd2", "uci": "e4d2" },
+        { "san": "Bxd2", "uci": "f4d2", "comment": "Recapturing" }
+      ]
+    },
+    {
+      "id": "cunningham-defense",
+      "name": "Cunningham Defense",
+      "eco": "C35",
+      "difficulty": "intermediate",
+      "description": "Black plays Be7, a simple and solid approach. Keeping the extra pawn while developing pieces naturally.",
+      "moves": [
+        { "san": "exf4", "uci": "e5f4" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Be7", "uci": "f8e7", "annotation": "!", "comment": "The Cunningham! Simple development" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Aiming at f7" },
+        { "san": "Bh4+", "uci": "e7h4", "annotation": "!", "comment": "Check! Gaining time" },
+        { "san": "g3", "uci": "g2g3", "comment": "Forcing the bishop away" },
+        { "san": "fxg3", "uci": "f4g3" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling into safety" },
+        { "san": "gxh2+", "uci": "g3h2", "comment": "Check with the pawn" },
+        { "san": "Kh1", "uci": "g8h1" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and attacking" },
+        { "san": "d4", "uci": "d2d4", "comment": "Central control" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Development" }
+      ]
+    },
+    {
+      "id": "falkbeer-counter-gambit",
+      "name": "Falkbeer Counter-Gambit",
+      "eco": "C31",
+      "difficulty": "intermediate",
+      "description": "Black declines the gambit with d5!, offering a counter-gambit. Sharp and direct, fighting for the initiative immediately. A principled refusal.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "The Falkbeer! Counter-gambit in the center" },
+        { "san": "exd5", "uci": "e4d5", "comment": "Accepting the challenge" },
+        { "san": "e4", "uci": "e5e4", "annotation": "!", "comment": "Central pawn roller" },
+        { "san": "d3", "uci": "d2d3", "comment": "Attacking the e4 pawn" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing with pressure" },
+        { "san": "dxe4", "uci": "d3e4", "comment": "Opening lines" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing and attacking" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Active bishop" },
+        { "san": "Qe2", "uci": "d1e2", "comment": "Pinning the knight" },
+        { "san": "Bf5", "uci": "c8f5", "annotation": "!", "comment": "Developing with tempo" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Attacking the e4 knight" },
+        { "san": "Qe7", "uci": "d8e7" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Completing development" }
+      ]
+    },
+    {
+      "id": "classical-defense",
+      "name": "Classical Defense",
+      "eco": "C30",
+      "difficulty": "beginner",
+      "description": "Black declines the gambit with Bc5, the classical and solid approach. Developing quickly and keeping the center stable. Safe and sound.",
+      "moves": [
+        { "san": "Bc5", "uci": "f8c5", "annotation": "!", "comment": "The Classical - declining the gambit" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing the knight" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid central pawn" },
+        { "san": "c3", "uci": "c2c3", "comment": "Preparing d4" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and attacking e4" },
+        { "san": "fxe5", "uci": "f4e5", "comment": "Opening the f-file" },
+        { "san": "dxe5", "uci": "d6e5" },
+        { "san": "Nxe5", "uci": "f3e5", "comment": "Central knight" },
+        { "san": "Nxe4", "uci": "f6e4", "comment": "Counterattacking" },
+        { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "Central expansion" },
+        { "san": "Bb6", "uci": "c5b6", "comment": "Retreating the bishop" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing and attacking" },
+        { "san": "Nf6", "uci": "e4f6" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling into safety" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "gambit", "tactical", "aggressive", "romantic", "sharp"]
+}

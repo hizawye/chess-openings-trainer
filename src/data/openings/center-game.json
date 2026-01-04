@@ -1,0 +1,122 @@
+{
+  "id": "center-game",
+  "name": "Center Game",
+  "eco": "C21-C22",
+  "color": "white",
+  "description": "An aggressive opening where White plays d4 on move 2, immediately challenging Black's e5 pawn. Direct and forcing, though somewhat committal. Popular in the romantic era and still occasionally seen. Leads to open positions with tactical possibilities.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "The Center Game! Direct challenge" }
+  ],
+  "variations": [
+    {
+      "id": "normal-variation",
+      "name": "Normal Variation",
+      "eco": "C22",
+      "difficulty": "beginner",
+      "description": "The main line where White recaptures with the queen. Simple and direct approach.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4", "comment": "Accepting" },
+        { "san": "Qxd4", "uci": "d1d4", "annotation": "!", "comment": "Recapturing with the queen" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Attacking the queen" },
+        { "san": "Qe3", "uci": "d4e3", "comment": "Retreating" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Pinning the knight" },
+        { "san": "Bd2", "uci": "c1d2", "comment": "Breaking the pin" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O-O", "uci": "e1c1", "annotation": "!", "comment": "Opposite side castling - sharp!" },
+        { "san": "Re8", "uci": "f8e8", "comment": "Attacking e4" },
+        { "san": "Qg3", "uci": "e3g3", "comment": "Defending" }
+      ]
+    },
+    {
+      "id": "berger-variation",
+      "name": "Berger Variation",
+      "eco": "C21",
+      "difficulty": "intermediate",
+      "description": "White plays Nf3 instead of recapturing on d4. Solid and less forcing than the main line.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Nf3", "uci": "g1f3", "annotation": "!", "comment": "The Berger! Developing first" },
+        { "san": "Bb4+", "uci": "f8b4", "comment": "Check! Gaining tempo" },
+        { "san": "c3", "uci": "c2c3", "comment": "Blocking and attacking d4" },
+        { "san": "dxc3", "uci": "d4c3", "comment": "Taking" },
+        { "san": "Nxc3", "uci": "b1c3", "comment": "Recapturing" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Developing" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Developing" }
+      ]
+    },
+    {
+      "id": "paulsen-attack",
+      "name": "Paulsen Attack",
+      "eco": "C22",
+      "difficulty": "intermediate",
+      "description": "White plays Qe3 and develops aggressively. Named after Louis Paulsen. Sharp and tactical.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Qxd4", "uci": "d1d4" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Qe3", "uci": "d4e3", "annotation": "!", "comment": "The Paulsen! Keeping the queen central" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bb4", "uci": "f8b4" },
+        { "san": "Nf3", "uci": "g1f3", "annotation": "!", "comment": "Developing" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bd2", "uci": "c1d2" },
+        { "san": "Re8", "uci": "f8e8", "comment": "Attacking e4" },
+        { "san": "O-O-O", "uci": "e1c1", "comment": "Opposite castling" },
+        { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "Central break" }
+      ]
+    },
+    {
+      "id": "danish-gambit",
+      "name": "Danish Gambit",
+      "eco": "C21",
+      "difficulty": "advanced",
+      "description": "White sacrifices two pawns with c3 and Bc4. The sharpest line in the Center Game. Extremely tactical and dangerous.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "c3", "uci": "c2c3", "annotation": "!", "comment": "The Danish Gambit! Sacrificing a pawn" },
+        { "san": "dxc3", "uci": "d4c3", "comment": "Accepting" },
+        { "san": "Bc4", "uci": "f1c4", "annotation": "!", "comment": "Second pawn sacrifice!" },
+        { "san": "cxb2", "uci": "c3b2", "comment": "Accepting the second pawn" },
+        { "san": "Bxb2", "uci": "c1b2", "comment": "Rapid development" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "All pieces out quickly" },
+        { "san": "Bb4+", "uci": "f8b4", "comment": "Check!" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Blocking" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8", "comment": "White has tremendous compensation" }
+      ]
+    },
+    {
+      "id": "hall-variation",
+      "name": "Hall Variation",
+      "eco": "C22",
+      "difficulty": "intermediate",
+      "description": "Black plays c6, a solid response. Preparing d5 and avoiding the main tactical lines.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Qxd4", "uci": "d1d4" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Qe3", "uci": "d4e3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "c6", "uci": "c7c6", "annotation": "!", "comment": "The Hall! Solid setup" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "Central strike" },
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "cxd5", "uci": "c6d5" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Solid development" },
+        { "san": "Bd6", "uci": "f8d6" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "direct", "tactical", "open", "aggressive"]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "stonewall-attack",
+  "name": "Stonewall Attack",
+  "eco": "D00",
+  "color": "white",
+  "description": "A solid attacking system where White builds pawns on d4, e3, and f4 creating a 'stonewall' formation. Clear attacking plan on the kingside with piece play on the e-file and f-file. Very popular at club level for its straightforward strategy.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "d5", "uci": "d7d5" },
+    { "san": "e3", "uci": "e2e3" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "f4", "uci": "f2f4", "annotation": "!", "comment": "The Stonewall! Building the wall" }
+  ],
+  "variations": [
+    {
+      "id": "classical-stonewall",
+      "name": "Classical Stonewall",
+      "eco": "D00",
+      "difficulty": "beginner",
+      "description": "The standard Stonewall setup with Bd3, Nf3, O-O, and piece play. Simple plan: attack on the kingside.",
+      "moves": [
+        { "san": "e6", "uci": "e7e6", "comment": "Solid development" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing the knight" },
+        { "san": "Bd6", "uci": "f8d6", "comment": "Developing" },
+        { "san": "Bd3", "uci": "f1d3", "annotation": "!", "comment": "Classical Stonewall bishop" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Both sides castled" },
+        { "san": "c5", "uci": "c7c5", "comment": "Queenside counterplay" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nbd2", "uci": "b1d2", "annotation": "!", "comment": "Flexible knight, heading to f3" },
+        { "san": "Qc7", "uci": "d8c7" },
+        { "san": "Ne5", "uci": "f3e5", "annotation": "!", "comment": "The key Stonewall outpost" }
+      ]
+    },
+    {
+      "id": "modern-stonewall",
+      "name": "Modern Stonewall",
+      "eco": "D00",
+      "difficulty": "intermediate",
+      "description": "Stonewall with early Bd3 and Qf3. More aggressive, preparing quick kingside attacks.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nd2", "uci": "b1d2", "annotation": "!", "comment": "Modern setup" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Qf3", "uci": "d1f3", "annotation": "!", "comment": "Aggressive queen placement" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "Nh3", "uci": "g1h3", "comment": "Heading to f2 or g5" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Qc7", "uci": "d8c7" }
+      ]
+    },
+    {
+      "id": "stonewall-bd3",
+      "name": "Stonewall with Bd3",
+      "eco": "D00",
+      "difficulty": "beginner",
+      "description": "Against different Black setups, maintaining the Stonewall structure. Flexible and solid.",
+      "moves": [
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Pinning the knight" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "Qe1", "uci": "d1e1", "annotation": "!", "comment": "Planning Qh4 attack" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "stonewall-b3",
+      "name": "Stonewall with b3",
+      "eco": "D00",
+      "difficulty": "intermediate",
+      "description": "Stonewall combined with b3 and Bb2. More positional and less forcing than the classical approach.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "b3", "uci": "b2b3", "annotation": "!", "comment": "Stonewall + fianchetto" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Bb2", "uci": "c1b2", "comment": "Long diagonal pressure" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "Qe7", "uci": "d8e7" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "system", "attacking", "beginner-friendly", "solid", "kingside-attack"]
+}

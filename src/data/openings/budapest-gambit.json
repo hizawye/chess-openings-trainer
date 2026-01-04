@@ -1,0 +1,101 @@
+{
+  "id": "budapest-gambit",
+  "name": "Budapest Gambit",
+  "eco": "A51-A52",
+  "color": "black",
+  "description": "An aggressive gambit where Black sacrifices a pawn for rapid development and active piece play. After 1.d4 Nf6 2.c4 e5, Black offers the e5 pawn. Sharp, tactical, and dangerous if White is unprepared. Popular at club level for its surprise value.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The Budapest Gambit! Sharp counterattack" }
+  ],
+  "variations": [
+    {
+      "id": "fajarowicz",
+      "name": "Fajarowicz Variation",
+      "eco": "A51",
+      "difficulty": "advanced",
+      "description": "Black plays Ne4, the sharpest line. Named after Sammi Fajarowicz. Highly tactical and uncompromising.",
+      "moves": [
+        { "san": "dxe5", "uci": "d4e5", "comment": "Accepting the gambit" },
+        { "san": "Ne4", "uci": "f6e4", "annotation": "!", "comment": "The Fajarowicz! Aggressive" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "Bb4+", "uci": "f8b4", "annotation": "!", "comment": "Check! Gaining tempo" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Blocking" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing with attack" },
+        { "san": "a3", "uci": "a2a3", "comment": "Asking the bishop" },
+        { "san": "Bxd2+", "uci": "b4d2", "comment": "Trading" },
+        { "san": "Qxd2", "uci": "d1d2" },
+        { "san": "Qe7", "uci": "d8e7", "annotation": "!", "comment": "Pressure on e5" },
+        { "san": "Qc2", "uci": "d2c2", "comment": "Defending" },
+        { "san": "Nxe5", "uci": "e4e5", "comment": "Regaining the pawn" }
+      ]
+    },
+    {
+      "id": "adler",
+      "name": "Adler Variation",
+      "eco": "A52",
+      "difficulty": "intermediate",
+      "description": "The main line where Black plays Ng4. Named after Adolf Adler. Solid and principled.",
+      "moves": [
+        { "san": "dxe5", "uci": "d4e5" },
+        { "san": "Ng4", "uci": "f6g4", "annotation": "!", "comment": "The Adler! Main line" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Defending e5" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "Bb4+", "uci": "f8b4", "comment": "Check!" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "Qe7", "uci": "d8e7", "comment": "Attacking e5" },
+        { "san": "a3", "uci": "a2a3", "comment": "Asking the bishop" },
+        { "san": "Ngxe5", "uci": "g4e5", "annotation": "!", "comment": "Regaining the pawn" },
+        { "san": "Nxe5", "uci": "f3e5" },
+        { "san": "Nxe5", "uci": "c6e5" },
+        { "san": "axb4", "uci": "a3b4" }
+      ]
+    },
+    {
+      "id": "alekhine",
+      "name": "Alekhine Variation",
+      "eco": "A52",
+      "difficulty": "intermediate",
+      "description": "White plays Nf3 and e3, a solid approach. Named after Alexander Alekhine. Positional and safe for White.",
+      "moves": [
+        { "san": "dxe5", "uci": "d4e5" },
+        { "san": "Ng4", "uci": "f6g4" },
+        { "san": "Nf3", "uci": "g1f3", "annotation": "!", "comment": "The Alekhine - solid" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Developing with attack" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid structure" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Developing" },
+        { "san": "Ngxe5", "uci": "g4e5", "comment": "Regaining the pawn" },
+        { "san": "Nxe5", "uci": "f3e5" },
+        { "san": "Nxe5", "uci": "c6e5" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "rubinstein",
+      "name": "Rubinstein Variation",
+      "eco": "A52",
+      "difficulty": "intermediate",
+      "description": "White plays Nf3 and Nc3. Classical development, keeping things simple and solid.",
+      "moves": [
+        { "san": "dxe5", "uci": "d4e5" },
+        { "san": "Ng4", "uci": "f6g4" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "Nc3", "uci": "b1c3", "annotation": "!", "comment": "The Rubinstein - classical" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Pinning the knight" },
+        { "san": "Qd5", "uci": "d1d5", "annotation": "!", "comment": "Central queen, attacking g4" },
+        { "san": "Bxc3+", "uci": "b4c3", "comment": "Forcing a decision" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "Qe7", "uci": "d8e7", "comment": "Attacking e5" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Defending" },
+        { "san": "Ngxe5", "uci": "g4e5" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "gambit", "tactical", "aggressive", "sharp"]
+}

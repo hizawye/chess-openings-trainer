@@ -1,0 +1,121 @@
+{
+  "id": "scandinavian-defense",
+  "name": "Scandinavian Defense",
+  "eco": "B01",
+  "color": "black",
+  "description": "Black immediately strikes at White's e4 pawn with d5. Simple and aggressive, the Scandinavian leads to quick development and clear plans. Increasingly popular at all levels.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "The Scandinavian! Immediately challenging e4" }
+  ],
+  "variations": [
+    {
+      "id": "main-line-qd6",
+      "name": "Main Line (Qd6)",
+      "eco": "B01",
+      "difficulty": "intermediate",
+      "description": "The most popular modern treatment. Black plays Qd6, keeping the queen centralized and flexible. Good piece activity.",
+      "moves": [
+        { "san": "exd5", "uci": "e4d5", "comment": "Accepting the challenge" },
+        { "san": "Qxd5", "uci": "d8d5", "comment": "Recapturing with the queen" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing and attacking the queen" },
+        { "san": "Qd6", "uci": "d5d6", "annotation": "!", "comment": "The modern main line! Centralized and flexible" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and controlling e4" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "a6", "uci": "a7a6", "comment": "Preparing b5 or preventing Nb5" },
+        { "san": "Ne5", "uci": "c3e5", "annotation": "!", "comment": "Centralizing the knight" },
+        { "san": "Qd8", "uci": "d6d8", "comment": "Retreating but solidifying" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Developing and eyeing f7" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Developing and preparing to trade the knight" },
+        { "san": "Qe2", "uci": "d1e2", "comment": "Preparing to castle queenside" }
+      ]
+    },
+    {
+      "id": "gubinsky-melts",
+      "name": "Gubinsky-Melts Defense (Qd8)",
+      "eco": "B01",
+      "difficulty": "beginner",
+      "description": "Black immediately retreats the queen to d8, the simplest approach. Solid and straightforward for beginners.",
+      "moves": [
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Qxd5", "uci": "d8d5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Qd8", "uci": "d5d8", "comment": "The Gubinsky-Melts! Simple retreat" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing naturally" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Developing and pinning" },
+        { "san": "h3", "uci": "h2h3", "comment": "Asking the bishop's intentions" },
+        { "san": "Bh5", "uci": "g4h5" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Developing" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid pawn structure" }
+      ]
+    },
+    {
+      "id": "mieses-kotroc",
+      "name": "Mieses-Kotroc Variation (Qa5)",
+      "eco": "B01",
+      "difficulty": "intermediate",
+      "description": "Black plays the aggressive Qa5, attacking the c3 knight and preparing to develop actively. Sharp and tactical.",
+      "moves": [
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Qxd5", "uci": "d8d5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Qa5", "uci": "d5a5", "annotation": "!", "comment": "The Mieses-Kotroc! Aggressive queen placement" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing the bishop actively" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Developing" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid setup" },
+        { "san": "Bd2", "uci": "c1d2", "comment": "Developing and preparing O-O-O" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solidifying the queenside" },
+        { "san": "Nd5", "uci": "f3d5", "annotation": "!", "comment": "Centralizing the knight" }
+      ]
+    },
+    {
+      "id": "icelandic-gambit",
+      "name": "Icelandic Gambit",
+      "eco": "B01",
+      "difficulty": "advanced",
+      "description": "A wild gambit where Black plays e6 instead of recapturing, offering a pawn for rapid development. Very sharp!",
+      "moves": [
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Nf6", "uci": "g8f6", "annotation": "!?", "comment": "The Icelandic Gambit! Ignoring the pawn" },
+        { "san": "c4", "uci": "c2c4", "comment": "Defending the pawn" },
+        { "san": "e6", "uci": "e7e6", "annotation": "!", "comment": "Sacrificing for development" },
+        { "san": "dxe6", "uci": "d5e6", "comment": "Taking the second pawn" },
+        { "san": "Bxe6", "uci": "f8e6", "comment": "Rapid development!" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bc5", "uci": "e6c5", "annotation": "!", "comment": "Aggressive bishop placement" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Bb4+", "uci": "c5b4", "comment": "Check! Disrupting White's development" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "O-O", "uci": "e8g8", "comment": "Castling with strong compensation" }
+      ]
+    },
+    {
+      "id": "portuguese",
+      "name": "Portuguese Variation",
+      "eco": "B01",
+      "difficulty": "intermediate",
+      "description": "Black develops the bishop to d6, a solid and flexible setup. Less common but sound.",
+      "moves": [
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing before recapturing" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "Nxd5", "uci": "f6d5", "comment": "Recapturing with the knight" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Bf5", "uci": "c8f5", "annotation": "!", "comment": "The Portuguese! Developing the bishop" },
+        { "san": "c4", "uci": "c2c4", "comment": "Attacking the knight" },
+        { "san": "Nb6", "uci": "d5b6", "comment": "Retreating to safety" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid pawn structure" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "aggressive", "simple", "underrated", "tactical"]
+}

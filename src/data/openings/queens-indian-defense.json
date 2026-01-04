@@ -1,0 +1,142 @@
+{
+  "id": "queens-indian-defense",
+  "name": "Queen's Indian Defense",
+  "eco": "E12-E19",
+  "color": "black",
+  "description": "One of the most solid and popular defenses to 1.d4. Black fianchettoes the queen's bishop, controlling the important e4 square while remaining flexible. A favorite of world champions including Capablanca and Karpov.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "e6", "uci": "e7e6" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "b6", "uci": "b7b6", "annotation": "!", "comment": "The Queen's Indian! Preparing to fianchetto and control e4" }
+  ],
+  "variations": [
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "E17",
+      "difficulty": "intermediate",
+      "description": "The main line with Be7. Solid and strategic, Black develops naturally and maintains flexibility.",
+      "moves": [
+        { "san": "g3", "uci": "g2g3", "comment": "White fianchettoes as well" },
+        { "san": "Bb7", "uci": "c8b7", "comment": "The Queen's Indian bishop" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Be7", "uci": "f8e7", "annotation": "!", "comment": "The Classical - solid development" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Ne4", "uci": "f6e4", "comment": "Typical maneuver, heading for d6" },
+        { "san": "Qc2", "uci": "d1c2", "comment": "Attacking the knight" },
+        { "san": "Nxc3", "uci": "e4c3" },
+        { "san": "Qxc3", "uci": "c2c3" },
+        { "san": "f5", "uci": "f7f5", "annotation": "!", "comment": "Gaining space on the kingside" }
+      ]
+    },
+    {
+      "id": "petrosian",
+      "name": "Petrosian Variation",
+      "eco": "E12",
+      "difficulty": "advanced",
+      "description": "White plays a3 early, a subtle prophylactic move. Named after World Champion Tigran Petrosian who refined this system.",
+      "moves": [
+        { "san": "a3", "uci": "a2a3", "annotation": "!", "comment": "The Petrosian! Preventing Bb4" },
+        { "san": "Bb7", "uci": "c8b7" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d5", "uci": "d7d5", "comment": "Central strike" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "Qc2", "uci": "d1c2", "comment": "Preparing e4" },
+        { "san": "Nxc3", "uci": "d5c3" },
+        { "san": "bxc3", "uci": "b2c3", "comment": "Doubled pawns but strong center" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "Building a strong center" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "fianchetto",
+      "name": "Fianchetto Variation",
+      "eco": "E15",
+      "difficulty": "intermediate",
+      "description": "Both sides fianchetto their bishops. Positional and strategic battle on the long diagonals.",
+      "moves": [
+        { "san": "g3", "uci": "g2g3" },
+        { "san": "Ba6", "uci": "c8a6", "annotation": "!", "comment": "The Fianchetto Variation - putting pressure on c4" },
+        { "san": "b3", "uci": "b2b3", "comment": "Defending the c4 pawn" },
+        { "san": "Bb4+", "uci": "f8b4", "comment": "Check! Disrupting development" },
+        { "san": "Bd2", "uci": "c1d2" },
+        { "san": "Be7", "uci": "b4e7", "comment": "Retreating after the check" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "d5", "uci": "d7d5", "comment": "Central break" },
+        { "san": "Ne5", "uci": "f3e5", "comment": "Centralizing the knight" }
+      ]
+    },
+    {
+      "id": "kasparov-petrosian",
+      "name": "Kasparov-Petrosian Variation",
+      "eco": "E12",
+      "difficulty": "advanced",
+      "description": "White plays Nc3 and d5, a modern aggressive try. Sharp and tactical, requiring precise play.",
+      "moves": [
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bb7", "uci": "c8b7" },
+        { "san": "a3", "uci": "a2a3" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "The Kasparov-Petrosian! Aggressive" },
+        { "san": "Nxc3", "uci": "d5c3" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "Qc7", "uci": "d8c7", "comment": "Attacking e4" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Defending and developing" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "Counterattack on the queenside" }
+      ]
+    },
+    {
+      "id": "miles",
+      "name": "Miles Variation",
+      "eco": "E14",
+      "difficulty": "intermediate",
+      "description": "Black plays Bb4+ early, named after GM Tony Miles. Flexible and solid approach.",
+      "moves": [
+        { "san": "e3", "uci": "e2e3", "comment": "Solid pawn structure" },
+        { "san": "Bb4+", "uci": "f8b4", "annotation": "!", "comment": "The Miles! Early bishop development" },
+        { "san": "Bd2", "uci": "c1d2" },
+        { "san": "Bxd2+", "uci": "b4d2", "comment": "Trading the bishop" },
+        { "san": "Qxd2", "uci": "d1d2" },
+        { "san": "Bb7", "uci": "c8b7", "comment": "Completing the fianchetto" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "d5", "uci": "d7d5", "comment": "Central break" },
+        { "san": "O-O", "uci": "e1g8" }
+      ]
+    },
+    {
+      "id": "modern",
+      "name": "Modern Variation",
+      "eco": "E16",
+      "difficulty": "intermediate",
+      "description": "Black plays Ne4 early, a modern dynamic approach. Active piece play and central control.",
+      "moves": [
+        { "san": "g3", "uci": "g2g3" },
+        { "san": "Bb7", "uci": "c8b7" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Bb4+", "uci": "f8b4", "comment": "Check before committing" },
+        { "san": "Bd2", "uci": "c1d2" },
+        { "san": "Bxd2+", "uci": "b4d2" },
+        { "san": "Qxd2", "uci": "d1d2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Ne4", "uci": "f6e4", "annotation": "!", "comment": "The Modern! Active knight placement" },
+        { "san": "Qc2", "uci": "d2c2" },
+        { "san": "Nxc3", "uci": "e4c3" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "solid", "positional", "strategic", "world-class"]
+}

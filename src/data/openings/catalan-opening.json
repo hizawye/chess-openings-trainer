@@ -1,0 +1,124 @@
+{
+  "id": "catalan-opening",
+  "name": "Catalan Opening",
+  "eco": "E00-E09",
+  "color": "white",
+  "description": "A refined opening combining elements of the Queen's Gambit and King's Indian fianchetto. White plays d4, c4, and g3, creating subtle positional pressure. Popular at the highest levels.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "e6", "uci": "e7e6" },
+    { "san": "g3", "uci": "g2g3", "annotation": "!", "comment": "The Catalan! Combining Queen's Gambit with fianchetto" }
+  ],
+  "variations": [
+    {
+      "id": "open-catalan",
+      "name": "Open Catalan",
+      "eco": "E04",
+      "difficulty": "advanced",
+      "description": "Black takes on c4 and holds onto the pawn. Sharp tactical play with White having long-term positional compensation.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5", "comment": "Solid center" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "dxc4", "uci": "d5c4", "annotation": "!", "comment": "The Open Catalan - taking the pawn" },
+        { "san": "Bg2", "uci": "f1g2", "comment": "Fianchetto completed" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Defending the pawn" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Rb8", "uci": "a8b8", "comment": "Preparing b5 to hold the pawn" },
+        { "san": "Qa4", "uci": "d1a4", "annotation": "!", "comment": "Attacking c4 and the knight" },
+        { "san": "Bd7", "uci": "c8d7", "comment": "Defending" },
+        { "san": "Qxc4", "uci": "a4c4", "comment": "Regaining the pawn" },
+        { "san": "Nb4", "uci": "c6b4", "comment": "Attacking c2" },
+        { "san": "Ne5", "uci": "f3e5", "comment": "Centralizing" },
+        { "san": "Bc6", "uci": "d7c6", "comment": "Trading the strong bishop" }
+      ]
+    },
+    {
+      "id": "closed-catalan",
+      "name": "Closed Catalan",
+      "eco": "E06",
+      "difficulty": "intermediate",
+      "description": "Black plays Be7 without taking on c4. More solid and positional than the Open Catalan.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Be7", "uci": "f8e7", "comment": "The Closed Catalan - solid development" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Developing" },
+        { "san": "Qc2", "uci": "d1c2", "comment": "Preparing central action" },
+        { "san": "c6", "uci": "c7c6", "comment": "Solid pawn structure" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Flexible knight development" },
+        { "san": "b6", "uci": "b7b6", "comment": "Preparing Bb7" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "Central break" }
+      ]
+    },
+    {
+      "id": "semi-catalan",
+      "name": "Semi-Catalan",
+      "eco": "E00",
+      "difficulty": "intermediate",
+      "description": "Black doesn't play d5, leading to different pawn structures. Flexible and less theoretical.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6", "comment": "Flexible" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "The Semi-Catalan - avoiding d5" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Central knight" },
+        { "san": "Qb6", "uci": "d8b6", "comment": "Attacking the knight and b2" },
+        { "san": "Nxc6", "uci": "d4c6", "comment": "Trading knights" },
+        { "san": "Qxc6", "uci": "b6c6" }
+      ]
+    },
+    {
+      "id": "open-defense-classical",
+      "name": "Open Defense, Classical Line",
+      "eco": "E05",
+      "difficulty": "advanced",
+      "description": "A sharp line in the Open Catalan with a6 and b5. Black fights for the extra pawn with concrete tactics.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "dxc4", "uci": "d5c4" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "a6", "uci": "a7a6", "annotation": "!", "comment": "Preparing b5 to hold the pawn" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Qc2", "uci": "d1c2", "comment": "Attacking c4" },
+        { "san": "b5", "uci": "b7b5", "comment": "Holding the pawn" },
+        { "san": "a4", "uci": "a2a4", "annotation": "!", "comment": "Undermining the pawn chain" },
+        { "san": "Bb7", "uci": "c8b7", "comment": "Developing" },
+        { "san": "axb5", "uci": "a4b5" },
+        { "san": "axb5", "uci": "a6b5" }
+      ]
+    },
+    {
+      "id": "closed-traditional",
+      "name": "Closed Catalan, Traditional",
+      "eco": "E08",
+      "difficulty": "intermediate",
+      "description": "The most solid version of the Closed Catalan. Strategic maneuvering with slow buildup.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "dxc4", "uci": "d5c4", "comment": "Taking the pawn now" },
+        { "san": "Qc2", "uci": "d1c2", "comment": "Attacking c4" },
+        { "san": "a6", "uci": "a7a6", "comment": "Preparing b5" },
+        { "san": "Qxc4", "uci": "c2c4", "comment": "Regaining the pawn" },
+        { "san": "b5", "uci": "b7b5" },
+        { "san": "Qc2", "uci": "c4c2", "comment": "Retreating" },
+        { "san": "Bb7", "uci": "c8b7", "comment": "Developing the bishop" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "positional", "strategic", "world-class", "refined"]
+}

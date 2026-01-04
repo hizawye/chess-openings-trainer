@@ -1,0 +1,118 @@
+{
+  "id": "scotch-game",
+  "name": "Scotch Game",
+  "eco": "C44-C45",
+  "color": "white",
+  "description": "White plays d4 early, opening the center and leading to direct tactical play. Popular among aggressive players. Garry Kasparov revived this opening at the highest level.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "Nc6", "uci": "b8c6" },
+    { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "The Scotch Game! Opening the center immediately" }
+  ],
+  "variations": [
+    {
+      "id": "schmidt",
+      "name": "Schmidt Variation",
+      "eco": "C45",
+      "difficulty": "intermediate",
+      "description": "The main line with Nf6. Sharp and tactical, requiring accurate play from both sides.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Central knight" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "The Schmidt - most popular" },
+        { "san": "Nxc6", "uci": "d4c6", "comment": "Trading knights" },
+        { "san": "bxc6", "uci": "b7c6", "comment": "Doubled pawns but open b-file" },
+        { "san": "e5", "uci": "e4e5", "annotation": "!", "comment": "Gaining space" },
+        { "san": "Qe7", "uci": "d8e7", "comment": "Pinning the pawn" },
+        { "san": "Qe2", "uci": "d1e2", "comment": "Unpinning" },
+        { "san": "Nd5", "uci": "f6d5", "comment": "Centralizing the knight" },
+        { "san": "c4", "uci": "c2c4", "comment": "Attacking the knight" },
+        { "san": "Ba6", "uci": "c8a6", "annotation": "!", "comment": "Pinning the c-pawn" },
+        { "san": "b3", "uci": "b2b3", "comment": "Defending" }
+      ]
+    },
+    {
+      "id": "classical",
+      "name": "Classical Variation",
+      "eco": "C45",
+      "difficulty": "intermediate",
+      "description": "Black plays Bc5, the classical response. Strategic and positional.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Bc5", "uci": "f8c5", "annotation": "!", "comment": "The Classical - developing the bishop" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Attacking the bishop" },
+        { "san": "Qf6", "uci": "d8f6", "comment": "Defending the bishop" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the knight" },
+        { "san": "Nge7", "uci": "g8e7", "comment": "Developing" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Developing" },
+        { "san": "Ne5", "uci": "c6e5", "comment": "Attacking the bishop" },
+        { "san": "Be2", "uci": "c4e2", "comment": "Retreating" },
+        { "san": "Qg6", "uci": "f6g6", "comment": "Attacking g2" }
+      ]
+    },
+    {
+      "id": "mieses",
+      "name": "Mieses Variation",
+      "eco": "C45",
+      "difficulty": "advanced",
+      "description": "Black plays Qh4, an aggressive queen sortie. Sharp and tactical complications.",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Qh4", "uci": "d8h4", "annotation": "!?", "comment": "The Mieses! Aggressive queen move" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Pinning the knight" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Simple development" },
+        { "san": "Qxe4", "uci": "h4e4", "comment": "Taking the pawn" },
+        { "san": "Nb5", "uci": "d4b5", "annotation": "!", "comment": "Attacking c7" },
+        { "san": "Bxc3+", "uci": "b4c3", "comment": "Forcing the king to move" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "Kd8", "uci": "e8d8", "comment": "Moving the king to safety" }
+      ]
+    },
+    {
+      "id": "scotch-gambit",
+      "name": "Scotch Gambit",
+      "eco": "C44",
+      "difficulty": "advanced",
+      "description": "White plays Bc4 instead of Nxd4, sacrificing the pawn for rapid development. Very sharp!",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Bc4", "uci": "f1c4", "annotation": "!!", "comment": "The Scotch Gambit! Sacrificing for development" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Developing" },
+        { "san": "c3", "uci": "c2c3", "comment": "Attacking the center" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and attacking e4" },
+        { "san": "e5", "uci": "e4e5", "comment": "Attacking the knight" },
+        { "san": "d5", "uci": "d7d5", "comment": "Counter in the center" },
+        { "san": "Bb5", "uci": "c4b5", "comment": "Attacking the knight" },
+        { "san": "Ne4", "uci": "f6e4", "comment": "Centralizing" },
+        { "san": "cxd4", "uci": "c3d4", "comment": "Opening lines" },
+        { "san": "Bb6", "uci": "c5b6" }
+      ]
+    },
+    {
+      "id": "goring-gambit",
+      "name": "Göring Gambit",
+      "eco": "C44",
+      "difficulty": "advanced",
+      "description": "White plays c3, offering a second pawn for attacking chances. Romantic and aggressive!",
+      "moves": [
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "c3", "uci": "c2c3", "annotation": "!!", "comment": "The Göring Gambit! Offering another pawn" },
+        { "san": "dxc3", "uci": "d4c3", "comment": "Accepting the gambit" },
+        { "san": "Nxc3", "uci": "b1c3", "comment": "Rapid development" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Developing and pinning" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Targeting f7" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid defense" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling into the attack" },
+        { "san": "Bxc3", "uci": "b4c3", "comment": "Trading the bishop" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "Nf6", "uci": "g8f6" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "direct", "tactical", "Kasparov", "open"]
+}

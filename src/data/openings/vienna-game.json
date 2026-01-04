@@ -1,0 +1,116 @@
+{
+  "id": "vienna-game",
+  "name": "Vienna Game",
+  "eco": "C25-C29",
+  "color": "white",
+  "description": "A flexible 1.e4 opening where White plays Nc3 before Nf3. Can lead to quiet positional play or sharp gambits. A good alternative to the Italian or Spanish.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nc3", "uci": "b1c3", "annotation": "!", "comment": "The Vienna Game! Flexible knight development" }
+  ],
+  "variations": [
+    {
+      "id": "vienna-gambit",
+      "name": "Vienna Gambit",
+      "eco": "C29",
+      "difficulty": "advanced",
+      "description": "White sacrifices a pawn with f4 for rapid development and attacking chances. Very sharp and tactical!",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "f4", "uci": "f2f4", "annotation": "!!", "comment": "The Vienna Gambit! Sacrificing for attack" },
+        { "san": "d5", "uci": "d7d5", "comment": "Counterstrike in the center" },
+        { "san": "fxe5", "uci": "f4e5" },
+        { "san": "Nxe4", "uci": "f6e4", "comment": "Taking the pawn" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing with tempo" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Pinning the knight" },
+        { "san": "Qe2", "uci": "d1e2", "comment": "Unpinning and developing" },
+        { "san": "Nxc3", "uci": "e4c3", "comment": "Trading knights" },
+        { "san": "dxc3", "uci": "d2c3", "comment": "Opening the d-file" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing" }
+      ]
+    },
+    {
+      "id": "main-line",
+      "name": "Vienna Game Main Line",
+      "eco": "C25",
+      "difficulty": "intermediate",
+      "description": "The solid main line with Bc4. Positional and flexible, with options for both sides.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "The Main Line - targeting f7" },
+        { "san": "Nxe4", "uci": "f6e4", "comment": "Taking the pawn" },
+        { "san": "Qh5", "uci": "d1h5", "annotation": "!", "comment": "Aggressive queen move" },
+        { "san": "Nd6", "uci": "e4d6", "comment": "Defending f7" },
+        { "san": "Bb3", "uci": "c4b3", "comment": "Retreating the bishop" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid center" },
+        { "san": "g6", "uci": "g7g6", "comment": "Kicking the queen" },
+        { "san": "Qf3", "uci": "h5f3" },
+        { "san": "Bg7", "uci": "f8g7" }
+      ]
+    },
+    {
+      "id": "falkbeer",
+      "name": "Falkbeer Variation",
+      "eco": "C25",
+      "difficulty": "intermediate",
+      "description": "Black plays Nc6, mirroring White's knight development. Solid and straightforward.",
+      "moves": [
+        { "san": "Nc6", "uci": "b8c6", "comment": "The Falkbeer - mirroring development" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Developing the bishop" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid pawn structure" },
+        { "san": "Na5", "uci": "c6a5", "comment": "Attacking the bishop" },
+        { "san": "Bb3", "uci": "c4b3" },
+        { "san": "Nxb3", "uci": "a5b3", "comment": "Trading the bishop" },
+        { "san": "axb3", "uci": "a2b3", "comment": "Doubled pawns but open a-file" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Be7", "uci": "f8e7" }
+      ]
+    },
+    {
+      "id": "stanley",
+      "name": "Stanley Variation",
+      "eco": "C26",
+      "difficulty": "beginner",
+      "description": "White plays Nf3 early, a simple and solid approach. Good for beginners learning the Vienna.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "The Stanley - simple development" },
+        { "san": "d5", "uci": "d7d5", "comment": "Central strike" },
+        { "san": "exd5", "uci": "e4d5", "comment": "Trading" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "Nxd5", "uci": "c3d5", "comment": "Trading knights" },
+        { "san": "Qxd5", "uci": "d8d5" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "Qxd4", "uci": "f3d4" },
+        { "san": "Qxd4", "uci": "d5d4" }
+      ]
+    },
+    {
+      "id": "paulsen",
+      "name": "Paulsen Variation",
+      "eco": "C26",
+      "difficulty": "intermediate",
+      "description": "White plays g3, preparing to fianchetto. Positional and solid approach to the Vienna.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "g3", "uci": "g2g3", "annotation": "!", "comment": "The Paulsen - fianchetto setup" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "Bg2", "uci": "f1g2", "comment": "Fianchetto completed" },
+        { "san": "Nxc3", "uci": "d5c3" },
+        { "san": "bxc3", "uci": "b2c3", "comment": "Doubled pawns but bishop pair" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "flexible", "gambit", "tactical", "alternative"]
+}

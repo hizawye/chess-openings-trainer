@@ -1,0 +1,122 @@
+{
+  "id": "london-system",
+  "name": "London System",
+  "eco": "D00-D02",
+  "color": "white",
+  "description": "A solid and straightforward system where White develops with Bf4, e3, and Nbd2. Easy to learn and effective at all levels. One of the most popular openings for club players.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "Bf4", "uci": "c1f4", "annotation": "!", "comment": "The London System! Developing the bishop outside the pawn chain" }
+  ],
+  "variations": [
+    {
+      "id": "main-line",
+      "name": "Main Line vs King's Indian Setup",
+      "eco": "D02",
+      "difficulty": "beginner",
+      "description": "The standard London setup against Black's King's Indian-style development. Solid and easy to play.",
+      "moves": [
+        { "san": "d6", "uci": "d7d6", "comment": "Flexible setup" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid pawn structure" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Developing the knight" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Classical London setup" },
+        { "san": "e5", "uci": "e7e5", "comment": "Challenging the center" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "Be7", "uci": "f8e7", "comment": "Simple development" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Completing development" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Re8", "uci": "f8e8", "comment": "Preparing e4" },
+        { "san": "Qc2", "uci": "d1c2", "comment": "Preparing e4 or kingside play" },
+        { "san": "h6", "uci": "h7h6", "comment": "Preventing Bg5" }
+      ]
+    },
+    {
+      "id": "vs-nf6-setup",
+      "name": "London vs ...Nf6 Main Line",
+      "eco": "A46",
+      "difficulty": "beginner",
+      "description": "Standard London structure. White builds a solid position with easy-to-understand plans.",
+      "moves": [
+        { "san": "e6", "uci": "e7e6", "comment": "Solid development" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "c5", "uci": "c7c5", "comment": "Challenging the center" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting d4" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "Bd6", "uci": "f8d6", "comment": "Trading the London bishop" },
+        { "san": "Bxd6", "uci": "f4d6", "comment": "Trading bishops" },
+        { "san": "Qxd6", "uci": "d8d6" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" }
+      ]
+    },
+    {
+      "id": "jobava-london",
+      "name": "Jobava London System",
+      "eco": "D02",
+      "difficulty": "intermediate",
+      "description": "An aggressive version with Nc3 instead of Nbd2. Named after GM Baadur Jobava. More dynamic and tactical.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5", "comment": "Solid center" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "Nc3", "uci": "b1c3", "annotation": "!", "comment": "The Jobava! More aggressive than Nbd2" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nbd2", "uci": "g1d2", "comment": "Unusual knight maneuver" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "exd4", "uci": "e3d4" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Qb3", "uci": "d1b3", "annotation": "!", "comment": "Aggressive queen placement" }
+      ]
+    },
+    {
+      "id": "accelerated-london",
+      "name": "Accelerated London",
+      "eco": "D02",
+      "difficulty": "beginner",
+      "description": "White plays Bf4 on move 2, before Nf3. Slightly different move order to avoid certain Black setups.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5", "comment": "Controlling the center" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nd2", "uci": "b1d2", "comment": "Developing" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Black also develops the bishop outside" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Ngf3", "uci": "g1f3", "comment": "Finally developing the knight" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "Bxd6", "uci": "f4d6" },
+        { "san": "Qxd6", "uci": "d8d6" },
+        { "san": "Bd3", "uci": "f1d3" }
+      ]
+    },
+    {
+      "id": "vs-bf5",
+      "name": "London vs ...Bf5",
+      "eco": "D00",
+      "difficulty": "intermediate",
+      "description": "Black mirrors White's bishop development. Strategic battle on the light squares.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing" },
+        { "san": "Bf5", "uci": "c8f5", "annotation": "!", "comment": "Black also plays Bf5" },
+        { "san": "Bxf5", "uci": "f4f5", "comment": "Trading the bishops" },
+        { "san": "exf5", "uci": "e6f5" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "Bd6", "uci": "f8d6" },
+        { "san": "Nbd2", "uci": "b1d2" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "O-O", "uci": "e1g8" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "beginner-friendly", "solid", "system", "popular"]
+}

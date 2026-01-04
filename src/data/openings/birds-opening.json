@@ -1,0 +1,118 @@
+{
+  "id": "birds-opening",
+  "name": "Bird's Opening",
+  "eco": "A02-A03",
+  "color": "white",
+  "description": "A rare flank opening where White plays 1.f4. Aggressive and unorthodox, controlling e5 and preparing kingside attacks. Named after Henry Bird. Popular among players seeking to avoid main line theory. Can transpose to Dutch structures with colors reversed.",
+  "startingMoves": [
+    { "san": "f4", "uci": "f2f4", "annotation": "!", "comment": "Bird's Opening! Unorthodox and aggressive" }
+  ],
+  "variations": [
+    {
+      "id": "dutch-variation",
+      "name": "Dutch Variation",
+      "eco": "A03",
+      "difficulty": "intermediate",
+      "description": "Black plays d5, the most solid response. Leads to reversed Dutch positions. Strategic and positional.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "The Dutch! Solid center" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid structure" },
+        { "san": "g6", "uci": "g7g6", "comment": "Fianchetto setup" },
+        { "san": "Be2", "uci": "f1e2", "comment": "Developing" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid pawn structure" },
+        { "san": "c5", "uci": "c7c5", "comment": "Queenside expansion" },
+        { "san": "Qe1", "uci": "d1e1", "annotation": "!", "comment": "Typical Bird's maneuver" }
+      ]
+    },
+    {
+      "id": "froms-gambit",
+      "name": "From's Gambit",
+      "eco": "A02",
+      "difficulty": "advanced",
+      "description": "Black plays e5!, sacrificing a pawn. The sharpest response to Bird's Opening. Named after Martin Severin From. Dangerous if White accepts.",
+      "moves": [
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "From's Gambit! Sharp counterattack" },
+        { "san": "fxe5", "uci": "f4e5", "comment": "Accepting the gambit" },
+        { "san": "d6", "uci": "d7d6", "annotation": "!", "comment": "Attacking e5" },
+        { "san": "exd6", "uci": "e5d6", "comment": "Taking" },
+        { "san": "Bxd6", "uci": "f8d6", "comment": "Rapid development" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing" },
+        { "san": "g5", "uci": "g7g5", "annotation": "!", "comment": "Typical From's Gambit - aggressive" },
+        { "san": "g3", "uci": "g2g3", "comment": "Defending" },
+        { "san": "g4", "uci": "g5g4" },
+        { "san": "Nh4", "uci": "f3h4", "comment": "Retreating" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing with attack" },
+        { "san": "d4", "uci": "d2d4", "comment": "Central control" }
+      ]
+    },
+    {
+      "id": "sturm-gambit",
+      "name": "Sturm Gambit",
+      "eco": "A02",
+      "difficulty": "intermediate",
+      "description": "White plays d4 early, the Sturm Gambit approach. Sharp and tactical, seeking rapid development.",
+      "moves": [
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "The Sturm Gambit! Sharp" },
+        { "san": "dxe4", "uci": "d5e4", "comment": "Accepting" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Attacking the pawn" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Defending" },
+        { "san": "Bg5", "uci": "c1g5", "annotation": "!", "comment": "Developing with tempo" },
+        { "san": "Bf5", "uci": "c8f5", "comment": "Developing outside the pawn chain" },
+        { "san": "Bxf6", "uci": "g5f6", "comment": "Trading" },
+        { "san": "exf6", "uci": "e7f6" },
+        { "san": "Nxe4", "uci": "c3e4", "comment": "Regaining the pawn" },
+        { "san": "Qd5", "uci": "d8d5", "annotation": "!", "comment": "Centralized queen" },
+        { "san": "Qe2", "uci": "d1e2", "comment": "Pinning the knight" }
+      ]
+    },
+    {
+      "id": "williams-gambit",
+      "name": "Williams Gambit",
+      "eco": "A02",
+      "difficulty": "advanced",
+      "description": "White plays e4 and Nf3, offering a pawn. Aggressive and tactical approach by White.",
+      "moves": [
+        { "san": "e5", "uci": "e7e5" },
+        { "san": "fxe5", "uci": "f4e5" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "Nf3", "uci": "g1f3", "annotation": "!", "comment": "The Williams! Defending e5" },
+        { "san": "g5", "uci": "g7g5", "comment": "Aggressive expansion" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "g4", "uci": "g5g4" },
+        { "san": "Ng5", "uci": "f3g5", "comment": "Retreating" },
+        { "san": "h6", "uci": "h7h6" },
+        { "san": "Nf7", "uci": "g5f7", "annotation": "!", "comment": "Knight on f7!" },
+        { "san": "Kxf7", "uci": "e8f7" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" }
+      ]
+    },
+    {
+      "id": "lasker-variation",
+      "name": "Lasker Variation",
+      "eco": "A03",
+      "difficulty": "beginner",
+      "description": "Black plays Nf6 and d5, solid classical development. Named after Emanuel Lasker. Safe and sound.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "g6", "uci": "g7g6", "annotation": "!", "comment": "The Lasker - fianchetto" },
+        { "san": "e3", "uci": "e2e3", "comment": "Solid development" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid structure" },
+        { "san": "d3", "uci": "d2d3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Qe1", "uci": "d1e1", "comment": "Typical Bird's queen maneuver" }
+      ]
+    }
+  ],
+  "tags": ["flank", "unorthodox", "aggressive", "anti-theory", "1.f4"]
+}

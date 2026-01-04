@@ -1,0 +1,122 @@
+{
+  "id": "four-knights-game",
+  "name": "Four Knights Game",
+  "eco": "C47-C49",
+  "color": "white",
+  "description": "A classical opening where both sides develop their knights to natural squares. Symmetrical and solid, leading to balanced positions. Named for the obvious reason - all four knights are developed early. Popular in the romantic era and still sound today.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "Nc6", "uci": "b8c6" },
+    { "san": "Nc3", "uci": "b1c3", "annotation": "!", "comment": "The Four Knights! Symmetrical development" },
+    { "san": "Nf6", "uci": "g8f6", "comment": "All four knights are out" }
+  ],
+  "variations": [
+    {
+      "id": "spanish-four-knights",
+      "name": "Spanish Variation",
+      "eco": "C48",
+      "difficulty": "beginner",
+      "description": "White plays Bb5, combining Four Knights with Ruy Lopez ideas. The most common and solid approach.",
+      "moves": [
+        { "san": "Bb5", "uci": "f1b5", "annotation": "!", "comment": "The Spanish - Ruy Lopez structure" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Mirroring White's setup" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid center" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid structure" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Developing" },
+        { "san": "Bxc3", "uci": "b4c3", "comment": "Trading bishops" },
+        { "san": "bxc3", "uci": "b2c3" },
+        { "san": "Qe7", "uci": "d8e7" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting e4" }
+      ]
+    },
+    {
+      "id": "scotch-four-knights",
+      "name": "Scotch Variation",
+      "eco": "C47",
+      "difficulty": "intermediate",
+      "description": "White plays d4, the Scotch approach. Sharp and direct, opening the center immediately.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "The Scotch Four Knights!" },
+        { "san": "exd4", "uci": "e5d4", "comment": "Taking" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Recapturing" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Pinning the knight" },
+        { "san": "Nxc6", "uci": "d4c6", "annotation": "!", "comment": "Trading knights" },
+        { "san": "bxc6", "uci": "b7c6" },
+        { "san": "Bd3", "uci": "f1d3", "comment": "Developing" },
+        { "san": "d5", "uci": "d7d5", "comment": "Central strike" },
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "cxd5", "uci": "c6d5" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Castling" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "italian-four-knights",
+      "name": "Italian Variation",
+      "eco": "C50",
+      "difficulty": "beginner",
+      "description": "White plays Bc4, the Italian approach. Classical and straightforward development.",
+      "moves": [
+        { "san": "Bc4", "uci": "f1c4", "annotation": "!", "comment": "The Italian - aiming at f7" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Mirroring" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid center" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Developing" },
+        { "san": "h6", "uci": "h7h6", "comment": "Asking the bishop" },
+        { "san": "Bh4", "uci": "g5h4" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Counter-pin" },
+        { "san": "Nd5", "uci": "c3d5", "annotation": "!", "comment": "Central knight" }
+      ]
+    },
+    {
+      "id": "belgrade-gambit",
+      "name": "Belgrade Gambit",
+      "eco": "C49",
+      "difficulty": "intermediate",
+      "description": "White sacrifices a pawn with Nd5, the Belgrade Gambit. Sharp and tactical, offering exciting play.",
+      "moves": [
+        { "san": "Bb5", "uci": "f1b5" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Developing" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Nxe5", "uci": "c3e5", "annotation": "!", "comment": "The Belgrade Gambit!" },
+        { "san": "Nxe5", "uci": "f6e5" },
+        { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "Second pawn sacrifice" },
+        { "san": "Bd6", "uci": "c5d6", "comment": "Retreating" },
+        { "san": "f4", "uci": "f2f4", "comment": "Attacking the knight" },
+        { "san": "Ng6", "uci": "e5g6" },
+        { "san": "e5", "uci": "e4e5", "annotation": "!", "comment": "Central wedge" },
+        { "san": "Bc5", "uci": "d6c5" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Developing with tempo" }
+      ]
+    },
+    {
+      "id": "rubinstein-four-knights",
+      "name": "Rubinstein Variation",
+      "eco": "C48",
+      "difficulty": "intermediate",
+      "description": "White plays Nd5, the Rubinstein Variation. Strategic and solid, aiming for a small edge.",
+      "moves": [
+        { "san": "Bb5", "uci": "f1b5" },
+        { "san": "Nd4", "uci": "f6d4", "annotation": "!", "comment": "The Rubinstein! Breaking symmetry" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Trading" },
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "e5", "uci": "e4e5", "annotation": "!", "comment": "Gaining space" },
+        { "san": "dxc3", "uci": "d4c3", "comment": "Forcing a decision" },
+        { "san": "exf6", "uci": "e5f6", "comment": "Taking the knight" },
+        { "san": "Qxf6", "uci": "d8f6", "comment": "Recapturing" },
+        { "san": "dxc3", "uci": "d2c3", "comment": "Doubled pawns but bishop pair" },
+        { "san": "Qe5+", "uci": "f6e5", "annotation": "!", "comment": "Check! Active queen" },
+        { "san": "Be2", "uci": "b5e2", "comment": "Blocking" },
+        { "san": "Bc5", "uci": "f8c5" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "symmetrical", "classical", "solid", "balanced"]
+}

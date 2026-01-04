@@ -77,6 +77,82 @@
         { "san": "h3", "uci": "h2h3" },
         { "san": "h5", "uci": "h7h5", "comment": "Keeping the bishop active" }
       ]
+    },
+    {
+      "id": "marshall-attack",
+      "name": "Marshall Attack",
+      "eco": "C89",
+      "difficulty": "advanced",
+      "description": "Black sacrifices a pawn with d5! for tremendous attacking chances. One of the most critical and analyzed positions in chess. Named after Frank Marshall. Requires deep preparation.",
+      "moves": [
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "Ba4", "uci": "b5a4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Re1", "uci": "f1e1" },
+        { "san": "b5", "uci": "b7b5" },
+        { "san": "Bb3", "uci": "a4b3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "d5", "uci": "d7d5", "annotation": "!!", "comment": "The Marshall Attack! Bold pawn sacrifice" },
+        { "san": "exd5", "uci": "e4d5", "comment": "Accepting the gambit" },
+        { "san": "Nxd5", "uci": "f6d5" },
+        { "san": "Nxe5", "uci": "f3e5", "comment": "Taking a second pawn" },
+        { "san": "Nxe5", "uci": "d5e5" },
+        { "san": "Rxe5", "uci": "e1e5", "comment": "White is up a pawn but Black has compensation" },
+        { "san": "c6", "uci": "c7c6", "annotation": "!", "comment": "Typical Marshall setup" }
+      ]
+    },
+    {
+      "id": "open-variation",
+      "name": "Open Variation",
+      "eco": "C80",
+      "difficulty": "intermediate",
+      "description": "Black plays Nxe4 early, leading to sharp tactical complications. More forcing than the Closed Ruy Lopez. Popular among aggressive players.",
+      "moves": [
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "Ba4", "uci": "b5a4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nxe4", "uci": "f6e4", "annotation": "!", "comment": "The Open Ruy! Sharp and direct" },
+        { "san": "d4", "uci": "d2d4", "comment": "Attacking the center" },
+        { "san": "b5", "uci": "b7b5", "comment": "Attacking the bishop" },
+        { "san": "Bb3", "uci": "a4b3" },
+        { "san": "d5", "uci": "d7d5", "comment": "Central pawn" },
+        { "san": "dxe5", "uci": "d4e5", "comment": "Opening lines" },
+        { "san": "Be6", "uci": "c8e6", "comment": "Developing" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting the center" },
+        { "san": "Bc5", "uci": "f8c5", "annotation": "!", "comment": "Active bishop placement" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Attacking the knight" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "breyer-defense",
+      "name": "Breyer Defense",
+      "eco": "C95",
+      "difficulty": "advanced",
+      "description": "Black plays Nb8! in the Closed Ruy Lopez, a deep positional system. Named after Gyula Breyer. Strategic and complex, favored by world-class players.",
+      "moves": [
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "Ba4", "uci": "b5a4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Re1", "uci": "f1e1" },
+        { "san": "b5", "uci": "b7b5" },
+        { "san": "Bb3", "uci": "a4b3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "c3", "uci": "c2c3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "h3", "uci": "h2h3", "comment": "Preventing Bg4" },
+        { "san": "Nb8", "uci": "c6b8", "annotation": "!", "comment": "The Breyer! Deep maneuver" },
+        { "san": "d4", "uci": "d2d4", "comment": "Building the center" },
+        { "san": "Nbd7", "uci": "b8d7", "comment": "Rerouting the knight" },
+        { "san": "Nbd2", "uci": "b1d2", "comment": "Developing" },
+        { "san": "Bb7", "uci": "c8b7", "annotation": "!", "comment": "Classic Breyer setup" }
+      ]
     }
   ],
   "tags": ["1.e4", "classical", "strategic", "popular", "spanish"]

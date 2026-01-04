@@ -1,0 +1,121 @@
+{
+  "id": "benoni-defense",
+  "name": "Benoni Defense",
+  "eco": "A60-A79",
+  "color": "black",
+  "description": "A sharp counterattacking defense where Black plays c5 against White's d4. Creates asymmetrical pawn structures with opposite-side play. Popular among tactical players.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "Nf6", "uci": "g8f6" },
+    { "san": "c4", "uci": "c2c4" },
+    { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "The Benoni! Counterattacking the center" }
+  ],
+  "variations": [
+    {
+      "id": "modern-benoni",
+      "name": "Modern Benoni",
+      "eco": "A70",
+      "difficulty": "advanced",
+      "description": "The main line with e6 and exd6. Sharp and tactical with dynamic piece play.",
+      "moves": [
+        { "san": "d5", "uci": "d4d5", "comment": "White gains space" },
+        { "san": "e6", "uci": "e7e6", "annotation": "!", "comment": "The Modern Benoni - undermining the center" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "exd5", "uci": "e6d5", "comment": "Opening lines" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "g6", "uci": "g7g6", "comment": "Fianchetto setup" },
+        { "san": "e4", "uci": "e2e4", "comment": "Building a strong center" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" }
+      ]
+    },
+    {
+      "id": "czech-benoni",
+      "name": "Czech Benoni",
+      "eco": "A56",
+      "difficulty": "intermediate",
+      "description": "Black plays e6 without the d5 push from White. More positional than the Modern Benoni.",
+      "moves": [
+        { "san": "d5", "uci": "d4d5" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The Czech Benoni - aggressive" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "e4", "uci": "e2e4", "comment": "Strong center" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "Be2", "uci": "f1e2" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Developing and pinning" },
+        { "san": "O-O", "uci": "e1g8" }
+      ]
+    },
+    {
+      "id": "snake-benoni",
+      "name": "Snake Benoni",
+      "eco": "A71",
+      "difficulty": "advanced",
+      "description": "Black plays Bd7 and a6, creating a flexible 'snake' setup. Modern and sophisticated.",
+      "moves": [
+        { "san": "d5", "uci": "d4d5" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "exd5", "uci": "e6d5" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "g6", "uci": "g7g6" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Pinning the knight" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nd2", "uci": "f3d2", "annotation": "!", "comment": "The Snake - unusual knight move" },
+        { "san": "a6", "uci": "a7a6", "comment": "Flexible waiting move" },
+        { "san": "e4", "uci": "e2e4" }
+      ]
+    },
+    {
+      "id": "benko-declined",
+      "name": "Benko Gambit Declined",
+      "eco": "A57",
+      "difficulty": "intermediate",
+      "description": "White declines the Benko Gambit pawn. More positional than accepting.",
+      "moves": [
+        { "san": "d5", "uci": "d4d5" },
+        { "san": "b5", "uci": "b7b5", "annotation": "!", "comment": "The Benko Gambit!" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Declining the gambit" },
+        { "san": "g6", "uci": "g7g6" },
+        { "san": "cxb5", "uci": "c4b5", "comment": "Taking the pawn now" },
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "b6", "uci": "b5b6", "comment": "Holding the pawn" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "e4", "uci": "e2e4" }
+      ]
+    },
+    {
+      "id": "fianchetto",
+      "name": "Fianchetto Variation",
+      "eco": "A62",
+      "difficulty": "intermediate",
+      "description": "White plays g3 and Bg2, a solid positional approach against the Benoni.",
+      "moves": [
+        { "san": "d5", "uci": "d4d5" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "exd5", "uci": "e6d5" },
+        { "san": "cxd5", "uci": "c4d5" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "g3", "uci": "g2g3", "annotation": "!", "comment": "The Fianchetto - solid approach" },
+        { "san": "g6", "uci": "g7g6" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "sharp", "counterattack", "tactical", "asymmetrical"]
+}

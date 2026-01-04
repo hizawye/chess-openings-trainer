@@ -1,0 +1,143 @@
+{
+  "id": "english-opening",
+  "name": "English Opening",
+  "eco": "A10-A39",
+  "color": "white",
+  "description": "A flexible and positional opening where White plays 1.c4, controlling d5 and preparing to develop flexibly. Can transpose to many different structures. Popular at the highest levels.",
+  "startingMoves": [
+    { "san": "c4", "uci": "c2c4", "annotation": "!", "comment": "The English Opening! Flexible and positional" }
+  ],
+  "variations": [
+    {
+      "id": "symmetrical",
+      "name": "Symmetrical Variation",
+      "eco": "A30",
+      "difficulty": "intermediate",
+      "description": "Black mirrors with c5, leading to symmetrical pawn structures. Strategic and positional battles.",
+      "moves": [
+        { "san": "c5", "uci": "c7c5", "comment": "The Symmetrical English - Black mirrors White" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Developing the knight" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Mirroring development" },
+        { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "Breaking the symmetry" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4", "comment": "Central knight" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid pawn structure" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing and challenging the knight" },
+        { "san": "g3", "uci": "g2g3", "comment": "Preparing to fianchetto" },
+        { "san": "Bc5", "uci": "f8c5", "comment": "Developing the bishop actively" },
+        { "san": "Ndb5", "uci": "d4b5", "comment": "Attacking a7" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "reversed-sicilian",
+      "name": "Reversed Sicilian",
+      "eco": "A25",
+      "difficulty": "intermediate",
+      "description": "Black plays e5, and White gets a Sicilian Defense with an extra tempo. Flexible and strategic.",
+      "moves": [
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "The Grand Prix setup from Black's perspective" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "g3", "uci": "g2g3", "comment": "Fianchetto setup - Reversed Dragon" },
+        { "san": "g6", "uci": "g7g6", "comment": "Black also fianchettoes" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid and flexible" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "four-knights",
+      "name": "Four Knights System",
+      "eco": "A29",
+      "difficulty": "beginner",
+      "description": "Both sides develop their knights quickly. Solid and straightforward, good for beginners learning the English.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing the knight" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e5", "uci": "e7e5", "comment": "Controlling the center" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "The Four Knights" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "g3", "uci": "g2g3", "comment": "Fianchetto setup" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Pinning the knight" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "d3", "uci": "d2d3", "comment": "Solid pawn structure" }
+      ]
+    },
+    {
+      "id": "anglo-indian",
+      "name": "Anglo-Indian Defense",
+      "eco": "A15",
+      "difficulty": "intermediate",
+      "description": "Black plays Nf6, keeping options open. Can transpose to many different structures. Very flexible.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6", "comment": "The Anglo-Indian - flexible development" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e6", "uci": "e7e6", "comment": "Solid and flexible" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "Transposing to e4 setups" },
+        { "san": "c5", "uci": "c7c5", "comment": "Striking back at the center" },
+        { "san": "e5", "uci": "e4e5", "comment": "Gaining space" },
+        { "san": "Ng8", "uci": "f6g8", "comment": "Retreating the knight" },
+        { "san": "d4", "uci": "d2d4", "comment": "Strong center" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Qxd4", "uci": "d1d4", "comment": "Centralized queen" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Attacking the queen" },
+        { "san": "Qf4", "uci": "d4f4" }
+      ]
+    },
+    {
+      "id": "ultra-symmetrical",
+      "name": "Ultra-Symmetrical Line",
+      "eco": "A37",
+      "difficulty": "advanced",
+      "description": "Complete symmetry in the opening. The player who breaks symmetry first usually takes the initiative. Strategic and nuanced.",
+      "moves": [
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Perfect mirror" },
+        { "san": "g3", "uci": "g2g3" },
+        { "san": "g6", "uci": "g7g6", "comment": "Still symmetric!" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Complete symmetry" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "d4", "uci": "d2d4", "annotation": "!", "comment": "Breaking the symmetry!" },
+        { "san": "cxd4", "uci": "c5d4" }
+      ]
+    },
+    {
+      "id": "botvinnik",
+      "name": "Botvinnik System",
+      "eco": "A22",
+      "difficulty": "advanced",
+      "description": "White plays e4 after c4, aiming for a Maroczy Bind structure. Strategic and positional, named after World Champion Botvinnik.",
+      "moves": [
+        { "san": "e5", "uci": "e7e5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "g3", "uci": "g2g3" },
+        { "san": "Bb4", "uci": "f8b4", "comment": "Pinning the knight" },
+        { "san": "Bg2", "uci": "f1g2" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "e4", "uci": "e2e4", "annotation": "!", "comment": "The Botvinnik System! Building a Maroczy Bind" },
+        { "san": "Bxc3", "uci": "b4c3", "comment": "Damaging White's structure" },
+        { "san": "bxc3", "uci": "b2c3", "comment": "Doubled pawns but strong center" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Ne2", "uci": "g1e2", "comment": "Flexible knight development" },
+        { "san": "Nc6", "uci": "b8c6" }
+      ]
+    }
+  ],
+  "tags": ["1.c4", "flexible", "positional", "transpositional", "strategic"]
+}

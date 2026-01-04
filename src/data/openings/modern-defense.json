@@ -1,0 +1,126 @@
+{
+  "id": "modern-defense",
+  "name": "Modern Defense",
+  "eco": "B06",
+  "color": "black",
+  "description": "A hypermodern opening where Black plays g6 and Bg7, allowing White to build a large pawn center. Black then counterattacks from the flanks. Flexible, dynamic, and popular at all levels. Named after the hypermodern revolution in chess.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "g6", "uci": "g7g6", "annotation": "!", "comment": "The Modern Defense! Hypermodern and flexible" }
+  ],
+  "variations": [
+    {
+      "id": "standard-line",
+      "name": "Standard Line",
+      "eco": "B06",
+      "difficulty": "intermediate",
+      "description": "The main approach where Black fianchettoes and develops naturally. White builds a center, Black prepares to undermine it.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4", "comment": "Building the ideal center" },
+        { "san": "Bg7", "uci": "f8g7", "comment": "Fianchetto bishop" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Developing the knight" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid pawn structure" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Developing and preparing Qd2" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Attacking e4" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Preparing long castling" },
+        { "san": "O-O", "uci": "e8g8", "comment": "King safety" },
+        { "san": "f3", "uci": "f2f3", "comment": "Reinforcing e4" },
+        { "san": "c6", "uci": "c7c6", "annotation": "!", "comment": "Preparing d5 break" },
+        { "san": "Nge2", "uci": "g1e2", "comment": "Flexible knight development" },
+        { "san": "b5", "uci": "b7b5", "annotation": "!", "comment": "Queenside expansion" }
+      ]
+    },
+    {
+      "id": "averbakh-system",
+      "name": "Averbakh System",
+      "eco": "B06",
+      "difficulty": "intermediate",
+      "description": "White plays Be2 and develops solidly. A flexible system that adapts to Black's setup.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Be2", "uci": "f1e2", "annotation": "!", "comment": "The Averbakh - solid development" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nf3", "uci": "g1f3", "comment": "Natural development" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8", "comment": "Both sides castled" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing the knight" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Solid development" },
+        { "san": "e5", "uci": "e7e5", "annotation": "!", "comment": "Central break" },
+        { "san": "dxe5", "uci": "d4e5" },
+        { "san": "dxe5", "uci": "d6e5" }
+      ]
+    },
+    {
+      "id": "gurgenidze-system",
+      "name": "Gurgenidze System",
+      "eco": "B06",
+      "difficulty": "advanced",
+      "description": "Black plays c6 and b5, the Gurgenidze approach. Flexible and challenging White's center from the queenside.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "c6", "uci": "c7c6", "annotation": "!", "comment": "The Gurgenidze! Flexible queenside setup" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "d5", "uci": "d7d5", "comment": "Challenging the center immediately" },
+        { "san": "e5", "uci": "e4e5", "comment": "Advancing the pawn" },
+        { "san": "h5", "uci": "h7h5", "annotation": "!", "comment": "Sharp! Preparing h4" },
+        { "san": "Bf4", "uci": "c1f4", "comment": "Developing outside the pawn chain" },
+        { "san": "h4", "uci": "h5h4", "comment": "Gaining space" },
+        { "san": "Ne2", "uci": "f3e2", "comment": "Retreating" },
+        { "san": "Nh6", "uci": "g8h6", "comment": "Planning Nf5" },
+        { "san": "Nf3", "uci": "e2f3" },
+        { "san": "Nf5", "uci": "h6f5", "comment": "Excellent outpost" }
+      ]
+    },
+    {
+      "id": "pterodactyl",
+      "name": "Pterodactyl Defense",
+      "eco": "B06",
+      "difficulty": "intermediate",
+      "description": "Black plays g6, d6, and c5 - the Pterodactyl setup. Unusual but sound, mixing Modern and Benoni ideas.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "c5", "uci": "c7c5", "annotation": "!", "comment": "The Pterodactyl! Benoni-style counterattack" },
+        { "san": "dxc5", "uci": "d4c5", "comment": "Accepting the challenge" },
+        { "san": "Qa5+", "uci": "d8a5", "comment": "Check! Regaining the pawn" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Qxc5", "uci": "a5c5", "comment": "Material restored" },
+        { "san": "Nc3", "uci": "b1c3", "comment": "Development" },
+        { "san": "d6", "uci": "d7d6", "comment": "Solid center" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Developing and attacking the queen" },
+        { "san": "Qa5", "uci": "c5a5" },
+        { "san": "Qd2", "uci": "d1d2", "comment": "Trading queens" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing" }
+      ]
+    },
+    {
+      "id": "two-knights",
+      "name": "Two Knights Variation",
+      "eco": "B06",
+      "difficulty": "beginner",
+      "description": "White develops both knights naturally. Simple and straightforward approach against the Modern Defense.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Bg7", "uci": "f8g7" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "Nf3", "uci": "g1f3", "annotation": "!", "comment": "Two Knights - simple development" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bc4", "uci": "f1c4", "comment": "Italian-style setup" },
+        { "san": "O-O", "uci": "e8g8" },
+        { "san": "O-O", "uci": "e1g8" },
+        { "san": "Nc6", "uci": "b8c6", "comment": "Developing" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting e4" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Pinning the knight" },
+        { "san": "Be3", "uci": "c1e3", "comment": "Solid development" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "hypermodern", "flexible", "dynamic", "fianchetto"]
+}
