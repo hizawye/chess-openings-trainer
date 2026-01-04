@@ -95,7 +95,9 @@ function TrainingSession({ opening, variation, onBack }: TrainingSessionProps) {
 
   const handleMove = useCallback(
     (from: string, to: string) => {
-      if (!isUserTurn || !expectedMove || isComplete) return;
+      if (!isUserTurn || !expectedMove || isComplete) {
+        return;
+      }
 
       const userUci = from + to;
       const expectedUci = expectedMove.uci;

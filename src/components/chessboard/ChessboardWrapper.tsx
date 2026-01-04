@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 import { Chessground } from '@lichess-org/chessground';
 import type { Api } from '@lichess-org/chessground/api';
 import type { Config } from '@lichess-org/chessground/config';
@@ -59,14 +59,9 @@ export default function ChessboardWrapper({
   const boardRef = useRef<HTMLDivElement>(null);
   const groundRef = useRef<Api | null>(null);
 
-  const handleMove = useCallback(
-    (orig: Key, dest: Key) => {
-      if (onMove) {
-        onMove(orig as string, dest as string);
-      }
-    },
-    [onMove]
-  );
+  // Use a ref to always have the latest onMove callback
+  const onMoveRef = useRef(onMove);
+  onMoveRef.current = onMove;
 
   // Convert arrows to drawable shapes
   const autoShapes = arrows.map(([orig, dest]) => ({
@@ -107,7 +102,12 @@ export default function ChessboardWrapper({
         autoShapes,
       },
       events: {
-        move: handleMove,
+        // Use the ref so we always call the latest callback
+        move: (orig: Key, dest: Key) => {
+          if (onMoveRef.current) {
+            onMoveRef.current(orig as string, dest as string);
+          }
+        },
       },
     };
 
