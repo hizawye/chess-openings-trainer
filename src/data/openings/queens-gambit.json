@@ -1,0 +1,78 @@
+{
+  "id": "queens-gambit",
+  "name": "Queen's Gambit",
+  "eco": "D00-D69",
+  "color": "white",
+  "description": "One of the oldest and most respected openings. White offers a pawn to gain central control, though Black can hold the pawn only temporarily.",
+  "startingMoves": [
+    { "san": "d4", "uci": "d2d4" },
+    { "san": "d5", "uci": "d7d5" },
+    { "san": "c4", "uci": "c2c4", "comment": "The Queen's Gambit - offering the c-pawn" }
+  ],
+  "variations": [
+    {
+      "id": "qg-accepted",
+      "name": "Queen's Gambit Accepted",
+      "eco": "D20",
+      "difficulty": "beginner",
+      "description": "Black accepts the pawn but must be careful not to hold onto it for too long.",
+      "moves": [
+        { "san": "dxc4", "uci": "d5c4", "comment": "Accepting the gambit" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "e3", "uci": "e2e3", "comment": "Preparing to recapture the pawn" },
+        { "san": "e6", "uci": "e7e6" },
+        { "san": "Bxc4", "uci": "f1c4", "comment": "Regaining the pawn with good development" }
+      ]
+    },
+    {
+      "id": "qg-declined",
+      "name": "Queen's Gambit Declined",
+      "eco": "D30",
+      "difficulty": "beginner",
+      "description": "The classical response - Black declines the pawn and maintains a solid position.",
+      "moves": [
+        { "san": "e6", "uci": "e7e6", "comment": "Declining the gambit, supporting d5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bg5", "uci": "c1g5", "comment": "Pinning the knight" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "slav-defense",
+      "name": "Slav Defense",
+      "eco": "D10",
+      "difficulty": "intermediate",
+      "description": "Black supports d5 with c6 instead of e6, keeping the light-squared bishop active.",
+      "moves": [
+        { "san": "c6", "uci": "c7c6", "comment": "The Slav! Supporting d5 while keeping Bc8 free" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "dxc4", "uci": "d5c4", "comment": "Now taking is good - Bf5 is possible" },
+        { "san": "a4", "uci": "a2a4", "comment": "Preventing b5" }
+      ]
+    },
+    {
+      "id": "semi-slav",
+      "name": "Semi-Slav Defense",
+      "eco": "D43",
+      "difficulty": "advanced",
+      "description": "A hybrid of the Slav and QGD, combining c6 and e6. Very solid but the Bc8 is temporarily blocked.",
+      "moves": [
+        { "san": "c6", "uci": "c7c6" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "e6", "uci": "e7e6", "comment": "The Semi-Slav - very solid" },
+        { "san": "e3", "uci": "e2e3" },
+        { "san": "Nbd7", "uci": "b8d7" },
+        { "san": "Bd3", "uci": "f1d3" }
+      ]
+    }
+  ],
+  "tags": ["1.d4", "classical", "strategic", "solid", "popular"]
+}

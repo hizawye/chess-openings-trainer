@@ -1,0 +1,83 @@
+{
+  "id": "italian-game",
+  "name": "Italian Game",
+  "eco": "C50-C54",
+  "color": "white",
+  "description": "One of the oldest chess openings, the Italian Game focuses on quick development and control of the center. The bishop on c4 targets the weak f7 square.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "Nc6", "uci": "b8c6" },
+    { "san": "Bc4", "uci": "f1c4" }
+  ],
+  "variations": [
+    {
+      "id": "giuoco-piano",
+      "name": "Giuoco Piano",
+      "eco": "C50",
+      "difficulty": "beginner",
+      "description": "The 'Quiet Game' - a solid, classical approach focusing on piece development.",
+      "moves": [
+        { "san": "Bc5", "uci": "f8c5", "comment": "Black mirrors White's development" },
+        { "san": "c3", "uci": "c2c3", "comment": "Preparing d4 to challenge the center" },
+        { "san": "Nf6", "uci": "g8f6", "comment": "Developing and attacking e4" },
+        { "san": "d4", "uci": "d2d4", "comment": "Striking at the center" },
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "cxd4", "uci": "c3d4" },
+        { "san": "Bb4+", "uci": "c5b4", "comment": "Check! Disrupting White's development" }
+      ]
+    },
+    {
+      "id": "evans-gambit",
+      "name": "Evans Gambit",
+      "eco": "C51",
+      "difficulty": "intermediate",
+      "description": "A sharp gambit where White sacrifices a pawn for rapid development and attacking chances.",
+      "moves": [
+        { "san": "Bc5", "uci": "f8c5" },
+        { "san": "b4", "uci": "b2b4", "annotation": "!", "comment": "The Evans Gambit! Sacrificing a pawn for tempo." },
+        { "san": "Bxb4", "uci": "c5b4", "comment": "Accepting the gambit" },
+        { "san": "c3", "uci": "c2c3", "comment": "Attacking the bishop and preparing d4" },
+        { "san": "Ba5", "uci": "b4a5", "comment": "Retreating to safety" },
+        { "san": "d4", "uci": "d2d4", "comment": "Seizing the center with tempo" },
+        { "san": "exd4", "uci": "e5d4" },
+        { "san": "O-O", "uci": "e1g1", "comment": "Castling and preparing to attack" }
+      ]
+    },
+    {
+      "id": "two-knights-defense",
+      "name": "Two Knights Defense",
+      "eco": "C55",
+      "difficulty": "intermediate",
+      "description": "Black's aggressive response with the knight instead of the bishop, leading to sharp tactical play.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6", "comment": "The Two Knights Defense - more aggressive than Bc5" },
+        { "san": "Ng5", "uci": "f3g5", "comment": "Attacking f7 - the Fried Liver Attack begins!" },
+        { "san": "d5", "uci": "d7d5", "annotation": "!", "comment": "The main counter-attack" },
+        { "san": "exd5", "uci": "e4d5" },
+        { "san": "Na5", "uci": "c6a5", "comment": "The Traxler counter-attack alternative is Bc5" }
+      ],
+      "subVariations": [
+        {
+          "id": "fried-liver",
+          "name": "Fried Liver Attack",
+          "eco": "C57",
+          "difficulty": "advanced",
+          "description": "A wild tactical line where White sacrifices a knight for a fierce attack on the Black king.",
+          "moves": [
+            { "san": "Nf6", "uci": "g8f6" },
+            { "san": "Ng5", "uci": "f3g5" },
+            { "san": "d5", "uci": "d7d5" },
+            { "san": "exd5", "uci": "e4d5" },
+            { "san": "Nxd5", "uci": "f6d5", "comment": "Taking the pawn - risky!" },
+            { "san": "Nxf7", "uci": "g5f7", "annotation": "!!", "comment": "The Fried Liver sacrifice!" },
+            { "san": "Kxf7", "uci": "e8f7" },
+            { "san": "Qf3+", "uci": "d1f3", "comment": "Attacking the knight and king" }
+          ]
+        }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "open game", "classical", "tactical", "beginner-friendly"]
+}

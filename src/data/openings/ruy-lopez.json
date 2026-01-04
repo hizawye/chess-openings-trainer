@@ -1,0 +1,83 @@
+{
+  "id": "ruy-lopez",
+  "name": "Ruy Lopez",
+  "eco": "C60-C99",
+  "color": "white",
+  "description": "Also known as the Spanish Opening, this is one of the oldest and most classic chess openings. It leads to rich strategic and tactical possibilities.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e5", "uci": "e7e5" },
+    { "san": "Nf3", "uci": "g1f3" },
+    { "san": "Nc6", "uci": "b8c6" },
+    { "san": "Bb5", "uci": "f1b5", "comment": "The Ruy Lopez! Putting pressure on the knight" }
+  ],
+  "variations": [
+    {
+      "id": "morphy-defense",
+      "name": "Morphy Defense",
+      "eco": "C78",
+      "difficulty": "beginner",
+      "description": "The main line - Black chases the bishop with a6, gaining the bishop pair possibility.",
+      "moves": [
+        { "san": "a6", "uci": "a7a6", "comment": "Asking the bishop what it wants to do" },
+        { "san": "Ba4", "uci": "b5a4", "comment": "Maintaining the pin" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Re1", "uci": "f1e1", "comment": "Supporting e4" }
+      ]
+    },
+    {
+      "id": "berlin-defense",
+      "name": "Berlin Defense",
+      "eco": "C65",
+      "difficulty": "intermediate",
+      "description": "Made famous by Kramnik vs Kasparov 2000. Very solid but leads to an endgame.",
+      "moves": [
+        { "san": "Nf6", "uci": "g8f6", "comment": "The Berlin Wall - super solid" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Nxe4", "uci": "f6e4" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "Nd6", "uci": "e4d6" },
+        { "san": "Bxc6", "uci": "b5c6" },
+        { "san": "dxc6", "uci": "d7c6" },
+        { "san": "dxe5", "uci": "d4e5" }
+      ]
+    },
+    {
+      "id": "closed-ruy-lopez",
+      "name": "Closed Ruy Lopez",
+      "eco": "C84",
+      "difficulty": "intermediate",
+      "description": "The classical main line continuing from the Morphy Defense.",
+      "moves": [
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "Ba4", "uci": "b5a4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Be7", "uci": "f8e7" },
+        { "san": "Re1", "uci": "f1e1" },
+        { "san": "b5", "uci": "b7b5" },
+        { "san": "Bb3", "uci": "a4b3" },
+        { "san": "O-O", "uci": "e8g8" }
+      ]
+    },
+    {
+      "id": "exchange-variation-ruy",
+      "name": "Exchange Variation",
+      "eco": "C68",
+      "difficulty": "beginner",
+      "description": "White captures on c6, doubling Black's pawns but giving up the bishop pair.",
+      "moves": [
+        { "san": "a6", "uci": "a7a6" },
+        { "san": "Bxc6", "uci": "b5c6", "comment": "The Exchange Variation" },
+        { "san": "dxc6", "uci": "d7c6" },
+        { "san": "O-O", "uci": "e1g1" },
+        { "san": "Bg4", "uci": "c8g4", "comment": "Pinning the knight" },
+        { "san": "h3", "uci": "h2h3" },
+        { "san": "h5", "uci": "h7h5", "comment": "Keeping the bishop active" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "classical", "strategic", "popular", "spanish"]
+}

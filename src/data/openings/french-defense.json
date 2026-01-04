@@ -1,0 +1,81 @@
+{
+  "id": "french-defense",
+  "name": "French Defense",
+  "eco": "C00-C19",
+  "color": "black",
+  "description": "A solid defense where Black creates a strong pawn chain. The light-squared bishop can be problematic but the structure is very resilient.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "e6", "uci": "e7e6", "comment": "The French Defense - solid and strategic" }
+  ],
+  "variations": [
+    {
+      "id": "advance-variation",
+      "name": "Advance Variation",
+      "eco": "C02",
+      "difficulty": "beginner",
+      "description": "White pushes e5, gaining space but creating a fixed pawn structure.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5", "comment": "Challenging the center" },
+        { "san": "e5", "uci": "e4e5", "comment": "The Advance Variation - gaining space" },
+        { "san": "c5", "uci": "c7c5", "comment": "Attacking the pawn chain at its base" },
+        { "san": "c3", "uci": "c2c3", "comment": "Supporting d4" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "Nf3", "uci": "g1f3" }
+      ]
+    },
+    {
+      "id": "exchange-variation",
+      "name": "Exchange Variation",
+      "eco": "C01",
+      "difficulty": "beginner",
+      "description": "White exchanges pawns early, leading to symmetrical positions. Often used to play for a draw.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "exd5", "uci": "e4d5", "comment": "The Exchange Variation" },
+        { "san": "exd5", "uci": "e6d5" },
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Bd3", "uci": "f1d3" }
+      ]
+    },
+    {
+      "id": "tarrasch-variation",
+      "name": "Tarrasch Variation",
+      "eco": "C03",
+      "difficulty": "intermediate",
+      "description": "White develops the knight to d2 instead of c3, avoiding pins and keeping options flexible.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nd2", "uci": "b1d2", "comment": "The Tarrasch - avoiding the pin on Nc3" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "e5", "uci": "e4e5" },
+        { "san": "Nfd7", "uci": "f6d7" },
+        { "san": "Bd3", "uci": "f1d3" },
+        { "san": "c5", "uci": "c7c5" }
+      ]
+    },
+    {
+      "id": "winawer-variation",
+      "name": "Winawer Variation",
+      "eco": "C15",
+      "difficulty": "advanced",
+      "description": "Black's most aggressive response, pinning the knight but potentially weakening the kingside.",
+      "moves": [
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "d5", "uci": "d7d5" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "Bb4", "uci": "f8b4", "annotation": "!", "comment": "The Winawer! Pinning the knight" },
+        { "san": "e5", "uci": "e4e5" },
+        { "san": "c5", "uci": "c7c5" },
+        { "san": "a3", "uci": "a2a3" },
+        { "san": "Bxc3+", "uci": "b4c3" },
+        { "san": "bxc3", "uci": "b2c3" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "solid", "strategic", "pawn chain", "classical"]
+}

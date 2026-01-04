@@ -1,0 +1,79 @@
+{
+  "id": "sicilian-defense",
+  "name": "Sicilian Defense",
+  "eco": "B20-B99",
+  "color": "black",
+  "description": "The most popular response to 1.e4. Black fights for the center asymmetrically, leading to complex positions with chances for both sides.",
+  "startingMoves": [
+    { "san": "e4", "uci": "e2e4" },
+    { "san": "c5", "uci": "c7c5", "comment": "The Sicilian! Fighting for d4 control" }
+  ],
+  "variations": [
+    {
+      "id": "open-sicilian",
+      "name": "Open Sicilian",
+      "eco": "B30",
+      "difficulty": "beginner",
+      "description": "The main line where White plays Nf3 and d4, leading to open tactical positions.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "d6", "uci": "d7d6", "comment": "Preparing Nf6 and controlling e5" },
+        { "san": "d4", "uci": "d2d4", "comment": "The Open Sicilian" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" }
+      ]
+    },
+    {
+      "id": "najdorf",
+      "name": "Najdorf Variation",
+      "eco": "B90",
+      "difficulty": "advanced",
+      "description": "The most popular and deeply analyzed Sicilian variation, favored by world champions Fischer and Kasparov.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "a6", "uci": "a7a6", "annotation": "!", "comment": "The Najdorf! Preparing b5 and keeping options open" }
+      ]
+    },
+    {
+      "id": "dragon",
+      "name": "Dragon Variation",
+      "eco": "B70",
+      "difficulty": "intermediate",
+      "description": "Black fianchettoes the bishop to g7, creating a 'dragon' formation. Sharp and tactical.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "d6", "uci": "d7d6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "Nf6", "uci": "g8f6" },
+        { "san": "Nc3", "uci": "b1c3" },
+        { "san": "g6", "uci": "g7g6", "comment": "The Dragon! Preparing Bg7" }
+      ]
+    },
+    {
+      "id": "accelerated-dragon",
+      "name": "Accelerated Dragon",
+      "eco": "B34",
+      "difficulty": "intermediate",
+      "description": "A quicker Dragon setup without d6, allowing d5 in one move later.",
+      "moves": [
+        { "san": "Nf3", "uci": "g1f3" },
+        { "san": "Nc6", "uci": "b8c6" },
+        { "san": "d4", "uci": "d2d4" },
+        { "san": "cxd4", "uci": "c5d4" },
+        { "san": "Nxd4", "uci": "f3d4" },
+        { "san": "g6", "uci": "g7g6", "comment": "The Accelerated Dragon - no d6 yet!" }
+      ]
+    }
+  ],
+  "tags": ["1.e4", "asymmetrical", "tactical", "popular", "complex"]
+}
