@@ -1,0 +1,12 @@
+.board {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.piece {
+  user-select: none;
+  pointer-events: none;
+}

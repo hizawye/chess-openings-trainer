@@ -36,140 +36,27 @@
 }
 
 .openingCards {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
 }
 
-.openingItem {
-  background-color: var(--bg-secondary);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .openingCards {
+    grid-template-columns: 1fr;
+  }
 }
 
-.openingHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: var(--spacing-md);
-  background: none;
-  border: none;
-  color: var(--text-primary);
-  cursor: pointer;
-  transition: background-color var(--transition-fast);
+@media (min-width: 641px) and (max-width: 1024px) {
+  .openingCards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
 }
 
-.openingHeader:hover {
-  background-color: var(--bg-tertiary);
-}
-
-.openingInfo {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-}
-
-.icon {
-  color: var(--primary);
-}
-
-.openingText {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.openingName {
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.openingMeta {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-}
-
-.progress {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  background-color: var(--bg-tertiary);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
-}
-
-.variations {
-  padding: 0 var(--spacing-md) var(--spacing-md);
-}
-
-.description {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  margin-bottom: var(--spacing-md);
-  line-height: 1.5;
-}
-
-.variationList {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
-}
-
-.variationItem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: var(--spacing-sm) var(--spacing-md);
-  background-color: var(--bg-tertiary);
-  border: none;
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.variationItem:hover {
-  background-color: var(--primary);
-}
-
-.variationInfo {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-}
-
-.variationName {
-  font-size: 0.875rem;
-}
-
-.variationEco {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.difficulty {
-  font-size: 0.625rem;
-  text-transform: uppercase;
-  padding: 2px 6px;
-  border-radius: var(--radius-sm);
-}
-
-.difficulty.beginner {
-  background-color: #4caf50;
-  color: white;
-}
-
-.difficulty.intermediate {
-  background-color: #ff9800;
-  color: white;
-}
-
-.difficulty.advanced {
-  background-color: #f44336;
-  color: white;
-}
-
-.completed {
-  color: var(--correct);
+@media (min-width: 1025px) {
+  .openingCards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }
