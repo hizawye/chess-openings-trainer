@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { BookOpen, Dumbbell, Settings, Crown } from 'lucide-react'
+import { BookOpen, Settings, Crown } from 'lucide-react'
 import styles from './Sidebar.module.css'
 
 export default function Sidebar() {
@@ -17,14 +17,6 @@ export default function Sidebar() {
         >
           <BookOpen size={20} />
           <span>Openings</span>
-        </NavLink>
-
-        <NavLink
-          to="/train"
-          className={({ isActive }) => `${styles.navItem} ${isActive ? styles.active : ''}`}
-        >
-          <Dumbbell size={20} />
-          <span>Train</span>
         </NavLink>
 
         <NavLink
