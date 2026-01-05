@@ -1,6 +1,7 @@
-import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import type { Repertoire, RepertoireItem, RepertoireGroup } from '../types/repertoire';
-import { defaultRepertoire, DEFAULT_GROUPS } from '../types/repertoire';
+import { defaultRepertoire } from '../types/repertoire';
 import { loadFromStorage, saveToStorage, STORAGE_KEYS } from '../utils/localStorage';
 
 interface RepertoireContextType {

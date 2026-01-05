@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { BookOpen, Settings, Crown } from 'lucide-react'
+import { BookOpen, Settings, Crown, Bookmark } from 'lucide-react'
 import styles from './Sidebar.module.css'
 
 export default function Sidebar() {
@@ -17,6 +17,14 @@ export default function Sidebar() {
         >
           <BookOpen size={20} />
           <span>Openings</span>
+        </NavLink>
+
+        <NavLink
+          to="/repertoire"
+          className={({ isActive }) => `${styles.navItem} ${isActive ? styles.active : ''}`}
+        >
+          <Bookmark size={20} />
+          <span>Repertoire</span>
         </NavLink>
 
         <NavLink

@@ -3,7 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, RotateCcw, Lightbulb, CheckCircle, XCircle } from 'lucide-react';
 import { useChessGame } from '../hooks/useChessGame';
 import { useComputerOpponent } from '../hooks/useComputerOpponent';
-import { getOpeningById, getVariationById } from '../data/openings';
+import { useProgress } from '../hooks/useProgress';
+import { getVariationById } from '../data/openings';
 import { ChessboardWrapper } from '../components/chessboard';
 import type { Opening, Variation } from '../types';
 import styles from './PlayPage.module.css';
@@ -11,6 +12,7 @@ import styles from './PlayPage.module.css';
 export default function PlayPage() {
   const navigate = useNavigate();
   const { openingId, variationId } = useParams<{ openingId: string; variationId: string }>();
+  const { recordAttempt, markCompleted } = useProgress();
 
   const [opening, setOpening] = useState<Opening | null>(null);
   const [variation, setVariation] = useState<Variation | null>(null);
@@ -21,6 +23,7 @@ export default function PlayPage() {
   const [trainingMode, setTrainingMode] = useState<'demo' | 'practice' | null>(null);
   const [isAutoPlaying, setIsAutoPlaying] = useState(false);
   const [showMoves, setShowMoves] = useState(true);
+  const [practiceStats, setPracticeStats] = useState({ correct: 0, incorrect: 0 });
 
   const { state, position, makeMove, makeMoveFromSan, getLegalMoves, reset: resetGame } = useChessGame();
 
@@ -73,15 +76,44 @@ export default function PlayPage() {
       const lastMove = moveHistory[moveHistory.length - 1];
 
       if (!computerOpponent.isCorrectOpeningMove(lastMove)) {
+        setPracticeStats((prev) => ({ ...prev, incorrect: prev.incorrect + 1 }));
         setFeedback({
           type: 'incorrect',
           message: `Not quite! Expected: ${computerOpponent.getExpectedMove()?.san}`,
         });
       } else {
+        setPracticeStats((prev) => ({ ...prev, correct: prev.correct + 1 }));
         setFeedback({
           type: 'correct',
           message: 'Correct move!',
         });
+
+        // Check if practice is complete
+        if (openingId && variationId && variation) {
+          const totalOpeningMoves = (opening?.startingMoves?.length || 0) + (variation.moves?.length || 0);
+          const currentMoveCount = state.history.length;
+
+          // If we've completed all the opening moves
+          if (currentMoveCount >= totalOpeningMoves) {
+            const totalMoves = practiceStats.correct + practiceStats.incorrect + 1; // +1 for current move
+            const scorePercentage = Math.round(((practiceStats.correct + 1) / totalMoves) * 100);
+
+            // Record the attempt
+            recordAttempt(openingId, variationId, scorePercentage);
+
+            // Mark as completed if 100%
+            if (scorePercentage === 100) {
+              markCompleted(openingId, variationId);
+            }
+
+            setTimeout(() => {
+              setFeedback({
+                type: 'correct',
+                message: `Practice complete! Score: ${scorePercentage}%`,
+              });
+            }, 2000);
+          }
+        }
       }
 
       setTimeout(() => setFeedback(null), 2000);
@@ -175,6 +207,7 @@ export default function PlayPage() {
     setIsAutoPlaying(false);
     setGameStatus('playing');
     setFeedback(null);
+    setPracticeStats({ correct: 0, incorrect: 0 });
   }, [resetGame, computerOpponent]);
 
   // Auto-play demo mode

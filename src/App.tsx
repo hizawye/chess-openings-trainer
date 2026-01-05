@@ -4,6 +4,7 @@ import { RepertoireProvider } from './context/RepertoireContext'
 import Layout from './components/layout/Layout'
 import OpeningsPage from './pages/OpeningsPage'
 import PlayPage from './pages/PlayPage'
+import RepertoirePage from './pages/RepertoirePage'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<OpeningsPage />} />
+            <Route path="repertoire" element={<RepertoirePage />} />
             <Route path="train/:openingId/:variationId" element={<PlayPage />} />
             <Route path="settings" element={<div className="flex items-center justify-center" style={{ height: '100%' }}><h2>Settings (Coming Soon)</h2></div>} />
           </Route>

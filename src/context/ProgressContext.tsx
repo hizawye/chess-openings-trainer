@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import type { ProgressState, VariationProgress, OpeningProgress } from '../types/progress';
 import { defaultProgress } from '../types/progress';
 import { loadFromStorage, saveToStorage, STORAGE_KEYS } from '../utils/localStorage';

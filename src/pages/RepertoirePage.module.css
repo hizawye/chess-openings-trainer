@@ -1,0 +1,124 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-lg, 24px);
+}
+
+.header {
+  margin-bottom: var(--spacing-lg, 24px);
+}
+
+.header h1 {
+  margin: 0 0 var(--spacing-xs, 4px) 0;
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+
+.tabs {
+  display: flex;
+  gap: var(--spacing-xs, 4px);
+  margin-bottom: var(--spacing-lg, 24px);
+  border-bottom: 2px solid var(--border-color, #e0e0e0);
+}
+
+.tab,
+.activeTab {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast, 0.15s);
+  color: var(--text-secondary);
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary, #f5f5f5);
+}
+
+.activeTab {
+  color: var(--primary, #1976d2);
+  border-bottom-color: var(--primary, #1976d2);
+}
+
+.groups {
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl, 48px) var(--spacing-lg, 24px);
+  text-align: center;
+  background: var(--bg-secondary);
+  border: 2px dashed var(--border-color, #e0e0e0);
+  border-radius: var(--radius-lg, 12px);
+  min-height: 400px;
+}
+
+.emptyIcon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md, 16px);
+}
+
+.emptyState h2 {
+  margin: 0 0 var(--spacing-sm, 8px) 0;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.emptyState p {
+  margin: 0 0 var(--spacing-lg, 24px) 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.emptyButton {
+  padding: 12px 24px;
+  background: var(--primary, #1976d2);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm, 4px);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast, 0.15s);
+}
+
+.emptyButton:hover {
+  background: var(--primary-dark, #1565c0);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: var(--spacing-md, 16px);
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .tabs {
+    overflow-x: auto;
+  }
+
+  .tab,
+  .activeTab {
+    padding: 10px 16px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+}
