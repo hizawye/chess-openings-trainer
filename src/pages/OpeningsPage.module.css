@@ -15,6 +15,27 @@
 .subtitle {
   color: var(--text-secondary);
   font-size: 0.875rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.repertoireButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  margin-top: var(--spacing-sm);
+}
+
+.repertoireButton:hover {
+  background-color: var(--primary-hover);
 }
 
 .tabs {

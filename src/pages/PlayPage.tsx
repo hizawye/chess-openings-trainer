@@ -256,7 +256,7 @@ export default function PlayPage() {
       <div className={styles.container}>
         <div className={styles.error}>
           <p>Opening not found</p>
-          <button onClick={() => navigate('/openings')} className={styles.backButton}>
+          <button onClick={() => navigate('/')} className={styles.backButton}>
             <ArrowLeft size={20} />
             Back to Openings
           </button>
@@ -268,7 +268,7 @@ export default function PlayPage() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <button onClick={() => navigate('/openings')} className={styles.backButton}>
+        <button onClick={() => navigate('/')} className={styles.backButton}>
           <ArrowLeft size={20} />
           Back
         </button>

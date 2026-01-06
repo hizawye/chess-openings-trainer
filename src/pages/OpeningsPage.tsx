@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search } from 'lucide-react';
+import { Search, BookOpen } from 'lucide-react';
 import { OpeningList } from '../components/openings';
 import { openings, searchOpenings } from '../data/openings';
 import { firstMoveCategories, styleCategories } from '../data/categories';
@@ -39,6 +39,14 @@ export default function OpeningsPage() {
         <p className={styles.subtitle}>
           Select an opening to practice. Master the moves through repetition.
         </p>
+
+        <button
+          onClick={() => navigate('/repertoire')}
+          className={styles.repertoireButton}
+        >
+          <BookOpen size={20} />
+          Go to Repertoire
+        </button>
       </div>
 
       <div className={styles.tabs}>
